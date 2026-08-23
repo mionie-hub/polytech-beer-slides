@@ -1,0 +1,415 @@
+.pictogram-page {
+  background: var(--ui-100);
+  color: var(--type-black);
+  min-height: 100svh;
+  padding: 52px 58px 68px;
+}
+
+.pictogram-hero {
+  border-bottom: 1px solid var(--ui-00);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .34fr);
+  padding-bottom: 34px;
+}
+
+.pictogram-hero h1 {
+  font-size: clamp(58px, 8vw, 132px);
+  margin: 0;
+}
+
+.pictogram-hero p {
+  font-size: clamp(20px, 1.7vw, 28px);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.pictogram-note {
+  align-self: end;
+  border-top: 1px solid var(--ui-00);
+  display: grid;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+.pictogram-note span,
+.pictogram-card header span {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.pictogram-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.pictogram-card {
+  background: var(--card-color);
+  border: 1px solid var(--ui-00);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 620px;
+  padding: 22px;
+}
+
+.pictogram-card header,
+.pictogram-card footer {
+  display: grid;
+  gap: 10px;
+}
+
+.pictogram-card header {
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+}
+
+.pictogram-card header span:last-child {
+  justify-self: end;
+}
+
+.pictogram-card footer h2 {
+  font-family: var(--font-display);
+  font-size: clamp(54px, 5vw, 82px);
+  font-weight: 450;
+  line-height: .86;
+  margin: 0;
+}
+
+.pictogram-card footer p {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 650;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pictogram-stage {
+  align-self: center;
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  position: relative;
+}
+
+.line-icon {
+  --ink: var(--ui-00);
+  --stroke: 10px;
+  height: 280px;
+  position: relative;
+  width: 280px;
+}
+
+.line-icon span,
+.line-icon span::before,
+.line-icon span::after {
+  box-sizing: border-box;
+}
+
+.line-icon span {
+  position: absolute;
+}
+
+.look-eye {
+  background: var(--ui-100);
+  border: var(--stroke) solid var(--ink);
+  border-radius: 72% 0 72% 0;
+  height: 116px;
+  left: 35px;
+  top: 82px;
+  transform: rotate(45deg);
+  width: 210px;
+}
+
+.look-eye::before {
+  background: var(--ink);
+  border-radius: 50%;
+  content: "";
+  height: 82px;
+  left: 54px;
+  position: absolute;
+  top: 7px;
+  width: 82px;
+}
+
+.look-eye::after {
+  background: var(--card-color);
+  border-radius: 50%;
+  content: "";
+  height: 24px;
+  left: 78px;
+  position: absolute;
+  top: 23px;
+  width: 24px;
+}
+
+.look-ray {
+  background: var(--ink);
+  border-radius: 999px;
+  height: var(--stroke);
+  transform-origin: center;
+  width: 48px;
+}
+
+.ray-one {
+  left: 70px;
+  top: 44px;
+  transform: rotate(45deg);
+}
+
+.ray-two {
+  left: 136px;
+  top: 26px;
+  transform: rotate(90deg);
+}
+
+.ray-three {
+  right: 48px;
+  top: 44px;
+  transform: rotate(-45deg);
+}
+
+.smell-nose {
+  border-bottom: var(--stroke) solid var(--ink);
+  border-left: var(--stroke) solid var(--ink);
+  border-radius: 0 0 0 14px;
+  height: 180px;
+  left: 116px;
+  top: 45px;
+  transform: skewX(-8deg);
+  width: 92px;
+}
+
+.smell-nose::before {
+  background: var(--ink);
+  border-radius: 999px;
+  content: "";
+  height: var(--stroke);
+  left: 0;
+  position: absolute;
+  top: -2px;
+  transform: rotate(102deg);
+  transform-origin: left center;
+  width: 92px;
+}
+
+.smell-nose::after {
+  background: var(--ink);
+  border-radius: 50%;
+  bottom: 11px;
+  content: "";
+  height: 18px;
+  right: 32px;
+  position: absolute;
+  width: 18px;
+}
+
+.smell-dot {
+  background: var(--ink);
+  border-radius: 50%;
+  height: 18px;
+  top: 208px;
+  width: 18px;
+}
+
+.dot-one {
+  left: 156px;
+}
+
+.dot-two {
+  left: 190px;
+}
+
+.smell-wave {
+  border-right: var(--stroke) solid var(--ink);
+  border-radius: 50%;
+}
+
+.wave-one {
+  height: 84px;
+  left: 18px;
+  top: 86px;
+  width: 46px;
+}
+
+.wave-two {
+  height: 128px;
+  left: 42px;
+  top: 64px;
+  width: 66px;
+}
+
+.taste-lip {
+  left: 28px;
+  width: 224px;
+}
+
+.upper-lip {
+  border-bottom: var(--stroke) solid var(--ink);
+  border-radius: 0 0 50% 50%;
+  height: 82px;
+  top: 82px;
+}
+
+.upper-lip::before,
+.upper-lip::after {
+  border-bottom: var(--stroke) solid var(--ink);
+  border-radius: 0 0 60% 60%;
+  content: "";
+  height: 54px;
+  position: absolute;
+  top: 4px;
+  width: 96px;
+}
+
+.upper-lip::before {
+  left: 16px;
+  transform: rotate(-9deg);
+}
+
+.upper-lip::after {
+  right: 16px;
+  transform: rotate(9deg);
+}
+
+.lower-lip {
+  border-bottom: var(--stroke) solid var(--ink);
+  border-radius: 0 0 58% 58%;
+  height: 104px;
+  top: 105px;
+}
+
+.taste-line {
+  background: var(--ink);
+  border-radius: 999px;
+  height: var(--stroke);
+  left: 48px;
+  top: 151px;
+  width: 184px;
+}
+
+.feel-finger {
+  border-left: var(--stroke) solid var(--ink);
+  border-radius: 52px 52px 0 0;
+  border-right: var(--stroke) solid var(--ink);
+  border-top: var(--stroke) solid var(--ink);
+  height: 184px;
+  left: 68px;
+  top: 50px;
+  width: 92px;
+}
+
+.feel-finger::before {
+  background: var(--card-color);
+  border-left: var(--stroke) solid var(--ink);
+  border-radius: 30px 0 0 30px;
+  border-top: var(--stroke) solid var(--ink);
+  content: "";
+  height: 54px;
+  left: 14px;
+  position: absolute;
+  top: 76px;
+  width: 52px;
+}
+
+.feel-print {
+  background: var(--ink);
+  border-radius: 999px;
+  width: var(--stroke);
+}
+
+.print-one {
+  height: 46px;
+  left: 100px;
+  top: 92px;
+}
+
+.print-two {
+  height: 68px;
+  left: 124px;
+  top: 76px;
+}
+
+.print-three {
+  height: 88px;
+  left: 148px;
+  top: 62px;
+}
+
+.feel-zigzag {
+  height: 118px;
+  right: 42px;
+  top: 78px;
+  width: 44px;
+}
+
+.feel-zigzag::before {
+  border-bottom: var(--stroke) solid var(--ink);
+  border-left: var(--stroke) solid var(--ink);
+  border-radius: 6px;
+  content: "";
+  height: 92px;
+  left: 4px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg) skew(0deg, 24deg);
+  width: 92px;
+}
+
+.pictogram-strip {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.pictogram-strip div {
+  border-bottom: 1px solid var(--ui-00);
+  border-right: 1px solid var(--ui-70);
+  border-top: 1px solid var(--ui-00);
+  display: grid;
+  gap: 8px;
+  min-height: 112px;
+  padding: 16px;
+}
+
+.pictogram-strip div:first-child {
+  border-left: 1px solid var(--ui-00);
+}
+
+.pictogram-strip strong {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 450;
+  line-height: .96;
+}
+
+.pictogram-strip span {
+  color: var(--ui-50);
+  font-size: 18px;
+  font-weight: 650;
+}
+
+@media (max-width: 1100px) {
+  .pictogram-grid,
+  .pictogram-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .pictogram-page {
+    padding: 34px 20px 50px;
+  }
+
+  .pictogram-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .pictogram-grid,
+  .pictogram-strip {
+    grid-template-columns: 1fr;
+  }
+}
