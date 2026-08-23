@@ -1,3 +1,4 @@
+/* CLASSROOM TYPE SCALE 2026-08-23 */
 @font-face {
   font-family: "Aspekta";
   font-style: normal;
@@ -94,7 +95,7 @@ h3 {
   height: var(--deck-viewport-height, 100vh);
   min-height: var(--deck-viewport-height, 100vh);
   overflow: hidden;
-  padding: 52px 58px 46px;
+  padding: 40px 46px 34px;
   position: relative;
   width: 100%;
 }
@@ -114,7 +115,7 @@ h3 {
   align-items: center;
   display: flex;
   font-family: var(--font-mono);
-  font-size: 16px;
+  font-size: 20px;
   font-variant-numeric: tabular-nums;
   font-weight: 500;
   gap: 18px;
@@ -125,7 +126,7 @@ h3 {
 }
 
 .slide-header {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .slide-brand {
@@ -141,9 +142,9 @@ h3 {
 .slide-body {
   align-self: stretch;
   display: grid;
-  gap: 34px;
+  gap: 26px;
   min-height: 0;
-  padding: 34px 0;
+  padding: 22px 0;
 }
 
 .type-display {
@@ -168,12 +169,12 @@ h3 {
 }
 
 .eyebrow {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 14px;
 }
 
 .korean-title {
-  font-size: clamp(40px, 4.8vw, 76px);
+  font-size: clamp(44.8px, 4.8vw, 76px);
   font-weight: 700;
   line-height: 1.05;
   margin-bottom: 20px;
@@ -190,7 +191,7 @@ h3 {
 }
 
 .lead {
-  font-size: clamp(25px, 2.5vw, 40px);
+  font-size: clamp(31.3px, 2.8vw, 44.8px);
   font-weight: 500;
   line-height: 1.28;
   max-width: 980px;
@@ -198,7 +199,7 @@ h3 {
 
 .body-copy {
   color: var(--ui-10);
-  font-size: clamp(19px, 1.6vw, 28px);
+  font-size: clamp(23.8px, 2vw, 35px);
   line-height: 1.55;
   max-width: 880px;
 }
@@ -229,7 +230,7 @@ h3 {
 .course-journey-meta {
   align-items: center;
   display: flex;
-  font-size: clamp(17px, 1.15vw, 21px);
+  font-size: clamp(21.3px, 1.4vw, 26.3px);
   gap: clamp(18px, 1.8vw, 32px);
   margin-bottom: clamp(12px, 1.6vh, 18px);
 }
@@ -248,7 +249,7 @@ h3 {
 }
 
 .course-journey-headline {
-  font-size: clamp(34px, min(3vw, 5.4vh), 58px);
+  font-size: clamp(38.1px, min(3.4vw, 5.4vh), 58px);
   font-weight: 590;
   line-height: .96;
   margin: clamp(24px, 3.2vh, 36px) 0 0;
@@ -257,7 +258,7 @@ h3 {
 
 .course-journey-summary {
   color: #51514c;
-  font-size: clamp(18px, 1.28vw, 23px);
+  font-size: clamp(22.5px, 1.6vw, 28.8px);
   font-weight: 540;
   margin: clamp(8px, 1.1vh, 12px) 0 0;
 }
@@ -277,7 +278,7 @@ h3 {
   align-content: start;
   border-right: 1px solid var(--ui-00);
   display: grid;
-  grid-template-rows: auto minmax(3.25em, auto) auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   min-width: 0;
   padding: clamp(13px, 1.4vw, 24px);
   position: relative;
@@ -311,43 +312,49 @@ h3 {
 }
 
 .course-journey-number {
-  font-size: clamp(16px, 1vw, 19px);
-  font-weight: 650;
+  color: var(--ui-50);
+  font-size: clamp(18px, 1.1vw, 20px);
+  font-weight: 560;
   margin: 4px 0 clamp(9px, 1.2vh, 14px);
 }
 
 .course-journey-stage strong {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.42vw, 27px);
-  font-weight: 620;
-  line-height: 1.02;
+  font-size: clamp(22px, 1.55vw, 30px);
+  font-weight: 630;
+  line-height: 1.06;
 }
 
 .course-journey-name {
+  align-content: start;
+  display: grid;
+  min-height: clamp(78px, 9vh, 98px);
   min-width: 0;
 }
 
 .course-journey-subtitle {
-  font-size: clamp(13px, .86vw, 16px);
-  font-weight: 700;
+  color: var(--ui-50);
+  font-size: 18px;
+  font-weight: 620;
   line-height: 1.1;
   margin-top: 5px;
 }
 
 .course-journey-stage em {
-  align-self: end;
+  align-self: stretch;
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(15px, 1vw, 19px);
-  font-weight: 750;
-  margin-top: clamp(12px, 1.8vh, 20px);
+  color: var(--ui-10);
+  font-size: clamp(18px, 1.1vw, 20px);
+  font-weight: 620;
+  margin-top: 0;
   padding-top: 8px;
 }
 
 .course-journey-stage p {
   align-self: end;
-  font-size: clamp(18px, 1.25vw, 23px);
-  font-weight: 680;
+  font-size: clamp(22px, 1.45vw, 26px);
+  font-weight: 570;
   line-height: 1.25;
   margin: 8px 0 0;
 }
@@ -372,7 +379,7 @@ h3 {
 
 .course-participation-invite strong {
   font-family: var(--font-display);
-  font-size: clamp(31px, 2.8vw, 54px);
+  font-size: clamp(34.7px, 3.1vw, 54px);
   font-weight: 610;
   line-height: .96;
   white-space: nowrap;
@@ -380,7 +387,7 @@ h3 {
 
 .course-participation-invite p {
   border-left: 1px solid var(--ui-00);
-  font-size: clamp(18px, 1.25vw, 23px);
+  font-size: clamp(22.5px, 1.6vw, 28.8px);
   font-weight: 650;
   line-height: 1.35;
   margin: 0;
@@ -388,12 +395,41 @@ h3 {
 }
 
 .course-participation-close {
+  align-items: center;
   border-left: 1px solid var(--ui-00);
-  font-size: clamp(23px, 1.75vw, 32px);
+  display: grid;
+  gap: clamp(16px, 1.7vw, 30px);
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 0 clamp(18px, 2vw, 34px);
+}
+
+.course-participation-close > p {
+  font-size: clamp(28.8px, 2.2vw, 35.8px);
   font-weight: 820;
   line-height: 1.22;
   margin: 0;
-  padding: 0 clamp(18px, 2vw, 34px);
+}
+
+.course-qr {
+  align-items: center;
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+}
+
+.course-qr img {
+  display: block;
+  height: clamp(88px, 6.2vw, 116px);
+  image-rendering: pixelated;
+  width: clamp(88px, 6.2vw, 116px);
+}
+
+.course-qr span {
+  font-family: var(--font-mono);
+  font-size: clamp(18px, 1.3vw, 21.3px);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -488,7 +524,7 @@ h3 {
 .fact-grid dt {
   color: var(--ui-10);
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   margin: 0;
   text-transform: uppercase;
@@ -497,7 +533,7 @@ h3 {
 .cover-meta dd,
 .fact-grid dd {
   font-family: var(--font-mono);
-  font-size: 19px;
+  font-size: 23.8px;
   font-weight: 500;
   margin: 0;
 }
@@ -554,21 +590,21 @@ h3 {
 
 .list-stack strong {
   display: block;
-  font-size: clamp(25px, 2.5vw, 38px);
+  font-size: clamp(31.3px, 2.8vw, 42.6px);
   line-height: 1.12;
   margin-bottom: 8px;
 }
 
 .list-stack p {
   color: var(--ui-50);
-  font-size: clamp(17px, 1.35vw, 22px);
+  font-size: clamp(21.3px, 1.7vw, 27.5px);
   line-height: 1.5;
   margin: 0;
 }
 
 .num {
   color: var(--ui-50);
-  font-size: 17px;
+  font-size: 21.3px;
 }
 
 .fact-grid {
@@ -588,7 +624,7 @@ h3 {
 }
 
 .fact-grid dd {
-  font-size: clamp(28px, 3vw, 50px);
+  font-size: clamp(35px, 3.4vw, 50px);
   line-height: .98;
   margin-top: 38px;
 }
@@ -620,18 +656,18 @@ h3 {
 .matrix-row.header {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   min-height: 48px;
   text-transform: uppercase;
 }
 
 .matrix-row strong {
-  font-size: clamp(21px, 2vw, 31px);
+  font-size: clamp(26.3px, 2.5vw, 34.7px);
   line-height: 1.1;
 }
 
 .matrix-row p {
-  font-size: clamp(16px, 1.22vw, 20px);
+  font-size: clamp(20px, 1.5vw, 25px);
   line-height: 1.45;
   margin: 0;
 }
@@ -662,19 +698,19 @@ h3 {
 
 .timeline-time {
   font-family: var(--font-mono);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .timeline-title {
-  font-size: clamp(21px, 1.85vw, 30px);
+  font-size: clamp(26.3px, 2.3vw, 33.6px);
   font-weight: 650;
   line-height: 1.18;
 }
 
 .timeline-note {
   color: var(--ui-50);
-  font-size: clamp(16px, 1.12vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   line-height: 1.45;
 }
 
@@ -696,13 +732,13 @@ h3 {
 }
 
 .word-tile strong {
-  font-size: clamp(25px, 2.5vw, 40px);
+  font-size: clamp(31.3px, 2.8vw, 44.8px);
   line-height: 1;
 }
 
 .word-tile span {
   color: var(--ui-10);
-  font-size: clamp(16px, 1.15vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
 }
 
 .equation {
@@ -717,7 +753,7 @@ h3 {
   background: var(--ui-90);
   border: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(30px, 3.3vw, 54px);
+  font-size: clamp(33.6px, 3.7vw, 54px);
   font-weight: 700;
   justify-content: center;
   min-height: 178px;
@@ -751,14 +787,14 @@ h3 {
   border-radius: 999px;
   display: flex;
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   height: 44px;
   justify-content: center;
   width: 44px;
 }
 
 .check-row strong {
-  font-size: clamp(22px, 1.9vw, 31px);
+  font-size: clamp(27.5px, 2.4vw, 34.7px);
   line-height: 1.15;
 }
 
@@ -771,7 +807,7 @@ h3 {
 
 .callout {
   border-left: 10px solid var(--slide-accent);
-  font-size: clamp(32px, 4vw, 66px);
+  font-size: clamp(35.8px, 4vw, 66px);
   font-weight: 700;
   line-height: 1.1;
   max-width: 1040px;
@@ -788,7 +824,7 @@ h3 {
   background: var(--ui-100);
   border: 1px solid var(--ui-00);
   border-radius: 999px;
-  font-size: 15px;
+  font-size: 18px;
   min-height: 32px;
   padding: 9px 13px;
 }
@@ -812,14 +848,14 @@ h3 {
 
 .step-card strong {
   font-family: var(--font-display);
-  font-size: clamp(28px, 2.8vw, 44px);
+  font-size: clamp(35px, 3.1vw, 44px);
   font-weight: 450;
   line-height: .98;
 }
 
 .step-card p {
   color: var(--ui-50);
-  font-size: clamp(15px, 1.1vw, 19px);
+  font-size: clamp(18px, 1.4vw, 23.8px);
   line-height: 1.45;
   margin: 0;
 }
@@ -902,19 +938,19 @@ h3 {
 
 .word-weight-5 {
   color: var(--ui-00);
-  font-size: clamp(34px, min(3.2vw, 5.8vh), 62px);
+  font-size: clamp(38.1px, min(3.6vw, 5.8vh), 62px);
   font-weight: 750;
 }
 
 .word-weight-3 {
   color: var(--ui-10);
-  font-size: clamp(25px, min(2.5vw, 4.5vh), 42px);
+  font-size: clamp(31.3px, min(2.8vw, 4.5vh), 42px);
   font-weight: 620;
 }
 
 .word-weight-1 {
   color: var(--ui-50);
-  font-size: clamp(18px, min(1.55vw, 2.8vh), 27px);
+  font-size: clamp(22.5px, min(1.9vw, 3.1vh), 33.8px);
   font-weight: 500;
 }
 
@@ -935,7 +971,7 @@ h3 {
 
 .association-final {
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(26px, 2.7vw, 44px);
+  font-size: clamp(32.5px, 3vw, 44px);
   font-weight: 720;
   justify-self: stretch;
   margin: 0;
@@ -966,7 +1002,7 @@ h3 {
 
 .world-expansion-copy .eyebrow {
   align-self: end;
-  font-size: clamp(20px, 1.25vw, 23px);
+  font-size: clamp(25px, 1.6vw, 28.8px);
   margin-bottom: clamp(28px, 4.2vh, 48px);
 }
 
@@ -981,7 +1017,7 @@ h3 {
 .world-expansion-body {
   align-self: start;
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(22px, 1.8vw, 32px);
+  font-size: clamp(27.5px, 2.3vw, 35.8px);
   font-weight: 620;
   line-height: 1.35;
   margin: clamp(30px, 4.5vh, 52px) 0 0;
@@ -1049,7 +1085,7 @@ h3 {
 .profile-story-copy .eyebrow,
 .season-one-copy .eyebrow,
 .season-two-copy .eyebrow {
-  font-size: clamp(20px, 1.25vw, 23px);
+  font-size: clamp(25px, 1.6vw, 28.8px);
   margin-bottom: 22px;
 }
 
@@ -1060,7 +1096,7 @@ h3 {
 }
 
 .profile-story-body {
-  font-size: clamp(23px, 2vw, 34px);
+  font-size: clamp(28.8px, 2.5vw, 38.1px);
   font-weight: 650;
   line-height: 1.3;
   margin: 20px 0 0;
@@ -1070,7 +1106,7 @@ h3 {
   border-bottom: 1px solid var(--ui-00);
   border-top: 1px solid var(--ui-00);
   font-family: var(--font-mono);
-  font-size: clamp(17px, 1.25vw, 20px);
+  font-size: clamp(21.3px, 1.6vw, 25px);
   font-weight: 600;
   margin: 28px 0 0;
   padding: 13px 0;
@@ -1095,13 +1131,13 @@ h3 {
 .season-axis span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .profile-role strong {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.3vw, 21px);
+  font-size: clamp(22.5px, 1.6vw, 26.3px);
   font-weight: 560;
   line-height: 1.08;
 }
@@ -1109,7 +1145,7 @@ h3 {
 .profile-role small,
 .season-axis small {
   display: block;
-  font-size: clamp(18px, 1.3vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 430;
   line-height: 1.25;
   margin-top: 4px;
@@ -1174,7 +1210,7 @@ h3 {
 
 .season-one-body {
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(21px, 1.8vw, 31px);
+  font-size: clamp(26.3px, 2.3vw, 34.7px);
   font-weight: 620;
   line-height: 1.3;
   margin: 30px 0 0;
@@ -1190,7 +1226,7 @@ h3 {
 
 .season-connection-line {
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(20px, 1.5vw, 25px);
+  font-size: clamp(25px, 1.9vw, 31.3px);
   font-weight: 620;
   line-height: 1.3;
   margin: 0;
@@ -1225,13 +1261,13 @@ h3 {
 
 .season-program strong {
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.3vw, 21px);
+  font-size: clamp(22.5px, 1.6vw, 26.3px);
   font-weight: 580;
   line-height: 1.05;
 }
 
 .season-program span {
-  font-size: clamp(18px, 1.3vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 430;
   line-height: 1.2;
   text-align: right;
@@ -1246,7 +1282,7 @@ h3 {
 .season-keyword {
   border: 1px solid var(--ui-00);
   font-family: var(--font-mono);
-  font-size: clamp(15px, 1.05vw, 19px);
+  font-size: clamp(18px, 1.3vw, 23.8px);
   font-weight: 600;
   line-height: 1.3;
   margin: -1px 0 0;
@@ -1256,7 +1292,7 @@ h3 {
 .season-keyword-1 {
   background: var(--culture-pale-yellow);
   font-family: var(--font-body);
-  font-size: clamp(21px, 1.8vw, 30px);
+  font-size: clamp(26.3px, 2.3vw, 33.6px);
 }
 
 .season-keyword-2 {
@@ -1287,13 +1323,13 @@ h3 {
 
 .season-two-body {
   font-family: var(--font-mono);
-  font-size: clamp(17px, 1.25vw, 20px);
+  font-size: clamp(21.3px, 1.6vw, 25px);
   font-weight: 600;
   margin: 12px 0 0;
 }
 
 .season-two-copy .season-headline {
-  font-size: clamp(40px, min(4.1vw, 7.4vh), 82px);
+  font-size: clamp(44.8px, min(4.1vw, 7.4vh), 82px);
   line-height: .88;
   white-space: nowrap;
 }
@@ -1317,7 +1353,7 @@ h3 {
 .season-axis strong {
   display: block;
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.3vw, 21px);
+  font-size: clamp(22.5px, 1.6vw, 26.3px);
   font-weight: 560;
   line-height: 1.05;
 }
@@ -1348,12 +1384,12 @@ h3 {
 
 .season-wset strong {
   font-family: var(--font-display);
-  font-size: clamp(17px, 1.4vw, 23px);
+  font-size: clamp(21.3px, 1.8vw, 28.8px);
   font-weight: 600;
 }
 
 .season-wset span {
-  font-size: clamp(18px, 1.3vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 430;
   text-align: right;
 }
@@ -1366,7 +1402,7 @@ h3 {
 
 .season-transition p {
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.55vw, 26px);
+  font-size: clamp(22.5px, 1.9vw, 32.5px);
   font-weight: 620;
   line-height: 1.08;
   margin: 0;
@@ -1376,7 +1412,7 @@ h3 {
   color: var(--ui-50);
   display: block;
   font-family: var(--font-mono);
-  font-size: clamp(13px, .95vw, 17px);
+  font-size: clamp(18px, 1.2vw, 21.3px);
   font-weight: 500;
   line-height: 1.4;
 }
@@ -1434,12 +1470,12 @@ h3 {
 }
 
 .tasting-lens-question .eyebrow {
-  font-size: clamp(20px, 1.25vw, 23px);
+  font-size: clamp(25px, 1.6vw, 28.8px);
   margin-bottom: 16px;
 }
 
 .tasting-lens-headline {
-  font-size: clamp(40px, min(4.6vw, 7.4vh), 76px);
+  font-size: clamp(44.8px, min(4.6vw, 7.4vh), 76px);
   font-weight: 720;
   line-height: 1.06;
   margin: 0;
@@ -1458,7 +1494,7 @@ h3 {
   border-bottom: 1px solid var(--ui-00);
   border-top: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(24px, 2.2vw, 38px);
+  font-size: clamp(30px, 2.8vw, 42.6px);
   font-weight: 700;
   margin: 0;
   padding: 12px 16px;
@@ -1515,20 +1551,20 @@ h3 {
 .tasting-framework-step > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
 .tasting-framework-step strong {
   font-family: var(--font-display);
-  font-size: clamp(28px, 2.35vw, 40px);
+  font-size: clamp(35px, 2.6vw, 44.8px);
   font-weight: 580;
   line-height: .95;
 }
 
 .tasting-framework-step p {
   align-self: start;
-  font-size: clamp(18px, 1.35vw, 22px);
+  font-size: clamp(22.5px, 1.7vw, 27.5px);
   font-weight: 620;
   line-height: 1.25;
   margin: clamp(18px, 3vh, 28px) 0 0;
@@ -1553,7 +1589,7 @@ h3 {
 
 .tasting-framework-final span {
   font-family: var(--font-mono);
-  font-size: clamp(18px, 1.5vw, 25px);
+  font-size: clamp(22.5px, 1.9vw, 31.3px);
   font-weight: 600;
   justify-content: center;
 }
@@ -1562,7 +1598,7 @@ h3 {
   background: var(--culture-bacteria-blue);
   color: var(--ui-00);
   font-family: var(--font-display);
-  font-size: clamp(38px, 3.6vw, 60px);
+  font-size: clamp(42.6px, 3.6vw, 60px);
   font-weight: 620;
   justify-content: center;
 }
@@ -1596,7 +1632,7 @@ h3 {
 }
 
 .tasting-board-eyebrow span {
-  font-size: clamp(18px, 1.3vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 620;
 }
 
@@ -1608,7 +1644,7 @@ h3 {
 }
 
 .tasting-board-body {
-  font-size: clamp(23px, 1.85vw, 31px);
+  font-size: clamp(28.8px, 2.3vw, 34.7px);
   font-weight: 650;
   line-height: 1.25;
   margin: 0 0 4px;
@@ -1639,7 +1675,7 @@ h3 {
 .tasting-board-pair,
 .tasting-board-vs {
   font-family: var(--font-mono);
-  font-size: clamp(18px, 1.3vw, 21px);
+  font-size: clamp(22.5px, 1.6vw, 26.3px);
   font-weight: 650;
 }
 
@@ -1662,7 +1698,7 @@ h3 {
   border-radius: 50%;
   display: flex;
   font-family: var(--font-display);
-  font-size: clamp(28px, 2.4vw, 42px);
+  font-size: clamp(35px, 2.7vw, 42px);
   font-weight: 580;
   justify-content: center;
   width: clamp(66px, 6.5vh, 84px);
@@ -1673,7 +1709,7 @@ h3 {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(28px, 2.45vw, 42px);
+  font-size: clamp(35px, 2.7vw, 42px);
   font-weight: 720;
   justify-content: center;
   line-height: 1.15;
@@ -1699,7 +1735,7 @@ h3 {
 }
 
 .mindset-eyebrow span {
-  font-size: clamp(18px, 1.3vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 500;
 }
 
@@ -1753,19 +1789,19 @@ h3 {
 .mindset-column > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .mindset-column > strong {
   font-family: var(--font-display);
-  font-size: clamp(29px, 2.5vw, 42px);
+  font-size: clamp(32.5px, 2.8vw, 42px);
   font-weight: 580;
   line-height: 1;
   margin-top: 10px;
 }
 
 .mindset-column > small {
-  font-size: clamp(18px, 1.35vw, 22px);
+  font-size: clamp(22.5px, 1.7vw, 27.5px);
   font-weight: 500;
   margin-top: 2px;
 }
@@ -1773,7 +1809,7 @@ h3 {
 .mindset-column h3 {
   align-self: end;
   border-top: 1px solid var(--ui-70);
-  font-size: clamp(20px, 1.55vw, 26px);
+  font-size: clamp(25px, 1.9vw, 32.5px);
   font-weight: 750;
   line-height: 1.25;
   margin: 16px 0 0;
@@ -1793,7 +1829,7 @@ h3 {
 
 .mindset-column p {
   color: var(--ui-10);
-  font-size: clamp(18px, 1.3vw, 21px);
+  font-size: clamp(22.5px, 1.6vw, 26.3px);
   line-height: 1.35;
   margin: 8px 0 0;
 }
@@ -1810,12 +1846,12 @@ h3 {
 }
 
 .mindset-memory strong {
-  font-size: clamp(28px, 2.65vw, 46px);
+  font-size: clamp(35px, 3vw, 46px);
   line-height: 1.1;
 }
 
 .mindset-memory span {
-  font-size: clamp(18px, 1.25vw, 20px);
+  font-size: clamp(22.5px, 1.6vw, 25px);
   font-weight: 600;
   text-align: right;
 }
@@ -1840,7 +1876,7 @@ h3 {
 
 .section-question-body {
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(32px, 3vw, 52px);
+  font-size: clamp(35.8px, 3.4vw, 52px);
   font-weight: 700;
   line-height: 1.15;
   margin: 28px 0 0;
@@ -1850,7 +1886,7 @@ h3 {
 .section-question-key {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(22px, 1.85vw, 31px);
+  font-size: clamp(27.5px, 2.3vw, 34.7px);
   font-weight: 650;
   justify-self: start;
   margin: 22px 0 0;
@@ -1876,7 +1912,7 @@ h3 {
 .pair-taste-heading > div > span,
 .paired-eyebrow > span {
   display: block;
-  font-size: clamp(18px, 1.35vw, 22px);
+  font-size: clamp(22.5px, 1.7vw, 27.5px);
   font-weight: 650;
   margin-top: 5px;
 }
@@ -1909,13 +1945,13 @@ h3 {
 }
 
 .pair-taste-action p {
-  font-size: clamp(23px, 2vw, 34px);
+  font-size: clamp(28.8px, 2.5vw, 38.1px);
   font-weight: 700;
 }
 
 .pair-taste-action strong {
   background: var(--culture-bacteria-blue);
-  font-size: clamp(35px, 3.6vw, 62px);
+  font-size: clamp(39.2px, 3.6vw, 62px);
   line-height: 1;
 }
 
@@ -1950,13 +1986,13 @@ h3 {
 .pair-taste-samples > strong {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
 .pair-taste-reminder {
   font-family: var(--font-mono);
-  font-size: clamp(18px, 1.45vw, 24px);
+  font-size: clamp(22.5px, 1.8vw, 30px);
   font-weight: 650;
   margin: 0;
   text-align: center;
@@ -2002,12 +2038,12 @@ h3 {
 .pair-describe-cue > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .pair-describe-cue strong {
   font-family: var(--font-display);
-  font-size: clamp(25px, 2.25vw, 38px);
+  font-size: clamp(31.3px, 2.5vw, 42.6px);
   font-weight: 580;
   line-height: .95;
   margin-top: 16px;
@@ -2015,7 +2051,7 @@ h3 {
 
 .pair-describe-cue p {
   align-self: end;
-  font-size: clamp(20px, 1.65vw, 28px);
+  font-size: clamp(25px, 2.1vw, 35px);
   font-weight: 650;
   line-height: 1.3;
   margin: 0;
@@ -2058,11 +2094,11 @@ h3 {
 
 .pair-describe-reminder strong {
   font-family: var(--font-display);
-  font-size: clamp(18px, 1.4vw, 23px);
+  font-size: clamp(22.5px, 1.8vw, 28.8px);
 }
 
 .pair-describe-reminder span {
-  font-size: clamp(17px, 1.25vw, 21px);
+  font-size: clamp(21.3px, 1.6vw, 26.3px);
   font-weight: 650;
   margin-top: 3px;
 }
@@ -2095,19 +2131,19 @@ h3 {
 .pair-describe-progressive-cues > div > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .pair-describe-progressive-cues strong {
   font-family: var(--font-display);
-  font-size: clamp(24px, 2vw, 34px);
+  font-size: clamp(30px, 2.5vw, 38.1px);
   line-height: 1;
   margin-top: 14px;
 }
 
 .pair-describe-progressive-cues p {
   align-self: end;
-  font-size: clamp(18px, 1.45vw, 24px);
+  font-size: clamp(22.5px, 1.8vw, 30px);
   font-weight: 650;
   line-height: 1.25;
   margin: 0;
@@ -2116,7 +2152,7 @@ h3 {
 .pair-describe-guided {
   background: var(--culture-pale-green);
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(25px, 2.25vw, 39px);
+  font-size: clamp(31.3px, 2.5vw, 43.7px);
   font-weight: 720;
   line-height: 1.17;
   margin: 0;
@@ -2175,7 +2211,7 @@ h3 {
   border: 1px solid var(--ui-00);
   display: flex;
   font-family: var(--font-display);
-  font-size: 30px;
+  font-size: 33.6px;
   font-weight: 580;
   height: 42px;
   justify-content: center;
@@ -2239,13 +2275,13 @@ h3 {
 
 .beer-product-name strong {
   font-family: var(--font-display);
-  font-size: clamp(21px, 1.8vw, 30px);
+  font-size: clamp(26.3px, 2.3vw, 33.6px);
   font-weight: 620;
   line-height: .95;
 }
 
 .beer-product-name span {
-  font-size: 18px;
+  font-size: 22.5px;
   font-weight: 500;
   line-height: 1.25;
   margin-top: 5px;
@@ -2260,7 +2296,7 @@ h3 {
   border-bottom: 1px solid var(--ui-70);
   display: grid;
   gap: 8px;
-  grid-template-columns: 62px minmax(0, 1fr);
+  grid-template-columns: 86px minmax(0, 1fr);
   padding: 7px 0;
 }
 
@@ -2268,7 +2304,7 @@ h3 {
 .beer-product-abv span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -2283,13 +2319,13 @@ h3 {
 
 .beer-product-meta dd strong {
   font-family: var(--font-display);
-  font-size: clamp(16px, 1.12vw, 18px);
+  font-size: clamp(20px, 1.4vw, 22.5px);
   font-weight: 580;
   line-height: 1.05;
 }
 
 .beer-product-meta dd span {
-  font-size: clamp(16px, 1.1vw, 18px);
+  font-size: clamp(20px, 1.4vw, 22.5px);
   line-height: 1.2;
   margin-top: 3px;
 }
@@ -2298,13 +2334,13 @@ h3 {
   align-items: start;
   display: grid;
   gap: 8px;
-  grid-template-columns: 62px minmax(0, 1fr);
+  grid-template-columns: 86px minmax(0, 1fr);
   padding-top: 7px;
 }
 
 .beer-product-abv strong {
   font-family: var(--font-display);
-  font-size: clamp(16px, 1.12vw, 18px);
+  font-size: clamp(20px, 1.4vw, 22.5px);
   font-weight: 580;
   line-height: 1.05;
 }
@@ -2338,7 +2374,7 @@ h3 {
 }
 
 .trace-focus-word span {
-  font-size: clamp(34px, 3.2vw, 54px);
+  font-size: clamp(38.1px, 3.6vw, 54px);
   font-weight: 720;
   margin-top: 28px;
 }
@@ -2352,7 +2388,7 @@ h3 {
 }
 
 .trace-focus-copy strong {
-  font-size: clamp(31px, 3vw, 52px);
+  font-size: clamp(34.7px, 3.4vw, 52px);
   line-height: 1.15;
 }
 
@@ -2370,7 +2406,7 @@ h3 {
 
 .trace-focus-copy p {
   border-top: 1px solid var(--ui-70);
-  font-size: clamp(19px, 1.5vw, 25px);
+  font-size: clamp(23.8px, 1.9vw, 31.3px);
   font-weight: 600;
   line-height: 1.35;
   margin: 30px 0 0;
@@ -2404,14 +2440,14 @@ h3 {
 }
 
 .hop-trace-title > span {
-  font-size: clamp(28px, 2.5vw, 42px);
+  font-size: clamp(35px, 2.8vw, 42px);
   font-weight: 720;
   line-height: 1;
 }
 
 .hop-trace-key {
   border-bottom: 1px solid var(--ui-00);
-  font-size: clamp(27px, 2.25vw, 39px);
+  font-size: clamp(33.8px, 2.5vw, 43.7px);
   font-weight: 720;
   line-height: 1.2;
   margin: clamp(24px, 3vh, 38px) 0 0;
@@ -2421,7 +2457,7 @@ h3 {
 .hop-trace-guardrail {
   align-self: end;
   color: var(--ui-10);
-  font-size: clamp(17px, 1.3vw, 22px);
+  font-size: clamp(21.3px, 1.6vw, 27.5px);
   font-weight: 600;
   line-height: 1.38;
   margin: clamp(22px, 3vh, 38px) 0 0;
@@ -2473,19 +2509,19 @@ h3 {
 .hop-trace-hero figcaption strong,
 .hop-trace-harvest figcaption strong {
   font-family: var(--font-display);
-  font-size: clamp(17px, 1.25vw, 21px);
+  font-size: clamp(21.3px, 1.6vw, 26.3px);
 }
 
 .hop-trace-hero figcaption span,
 .hop-trace-harvest figcaption span {
-  font-size: clamp(16px, 1.1vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   font-weight: 650;
   margin-top: 2px;
 }
 
 .hop-trace-hero figcaption p {
   border-top: 1px solid var(--ui-70);
-  font-size: clamp(16px, 1.15vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   font-weight: 600;
   line-height: 1.3;
   margin: 8px 0 0;
@@ -2514,7 +2550,7 @@ h3 {
 
 .hop-trace-facts > div:not(.hop-trace-roles) strong,
 .hop-trace-facts > div:not(.hop-trace-roles) span {
-  font-size: clamp(14px, 1.05vw, 18px);
+  font-size: clamp(18px, 1.3vw, 22.5px);
 }
 
 .hop-trace-facts > div:not(.hop-trace-roles) strong {
@@ -2543,11 +2579,11 @@ h3 {
 .hop-trace-roles strong {
   color: var(--culture-deep-periwinkle);
   font-family: var(--font-display);
-  font-size: clamp(14px, 1vw, 17px);
+  font-size: clamp(18px, 1.3vw, 21.3px);
 }
 
 .hop-trace-roles span {
-  font-size: clamp(14px, .98vw, 17px);
+  font-size: clamp(18px, 1.2vw, 21.3px);
   font-weight: 650;
   line-height: 1.2;
   margin-top: 2px;
@@ -2555,7 +2591,7 @@ h3 {
 
 .hop-trace-facts > p {
   background: var(--culture-pale-green);
-  font-size: clamp(15px, 1.1vw, 19px);
+  font-size: clamp(18px, 1.4vw, 23.8px);
   font-weight: 650;
   line-height: 1.25;
   margin: 4px 0 0;
@@ -2611,7 +2647,7 @@ h3 {
 }
 
 .touch-source-heading > span {
-  font-size: clamp(22px, 1.8vw, 30px);
+  font-size: clamp(27.5px, 2.3vw, 33.6px);
   font-weight: 650;
 }
 
@@ -2640,17 +2676,17 @@ h3 {
 .touch-source-sample > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .touch-source-sample strong {
   font-family: var(--font-display);
-  font-size: clamp(25px, 2.2vw, 38px);
+  font-size: clamp(31.3px, 2.8vw, 42.6px);
   line-height: 1;
 }
 
 .touch-source-sample p {
-  font-size: clamp(18px, 1.45vw, 24px);
+  font-size: clamp(22.5px, 1.8vw, 30px);
   font-weight: 600;
   margin: 0;
 }
@@ -2660,7 +2696,7 @@ h3 {
   border-bottom: 1px solid var(--ui-00);
   border-top: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(36px, min(3.8vw, 6.2vh), 64px);
+  font-size: clamp(40.3px, min(3.8vw, 6.2vh), 64px);
   font-weight: 720;
   line-height: 1.12;
   margin: 0;
@@ -2738,12 +2774,12 @@ h3 {
 
 .touch-source-labels strong {
   font-family: var(--font-display);
-  font-size: clamp(15px, 1.15vw, 19px);
+  font-size: clamp(18px, 1.4vw, 23.8px);
   line-height: 1;
 }
 
 .touch-source-labels span {
-  font-size: clamp(16px, 1.15vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   font-weight: 600;
   line-height: 1.2;
   margin-top: 4px;
@@ -2752,7 +2788,7 @@ h3 {
 .touch-source-reveal-copy > p {
   background: var(--culture-pale-yellow);
   border: 1px solid var(--ui-00);
-  font-size: clamp(17px, 1.3vw, 21px);
+  font-size: clamp(21.3px, 1.6vw, 26.3px);
   font-weight: 650;
   line-height: 1.3;
   margin: 0;
@@ -2762,7 +2798,7 @@ h3 {
 .touch-source-activity {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(20px, 1.65vw, 28px);
+  font-size: clamp(25px, 2.1vw, 35px);
   font-weight: 650;
   margin: 0;
   padding: 11px 16px;
@@ -2806,11 +2842,11 @@ h3 {
 }
 
 .relative-spectrum-slide[data-reveal-state="2"] .relative-spectrum-label strong {
-  font-size: clamp(22px, 1.9vw, 32px);
+  font-size: clamp(27.5px, 2.4vw, 35.8px);
 }
 
 .relative-spectrum-slide[data-reveal-state="2"] .relative-spectrum-label span {
-  font-size: clamp(17px, 1.25vw, 21px);
+  font-size: clamp(21.3px, 1.6vw, 26.3px);
 }
 
 .relative-spectrum-label strong,
@@ -2820,13 +2856,13 @@ h3 {
 
 .relative-spectrum-label strong {
   font-family: var(--font-display);
-  font-size: clamp(26px, 2.45vw, 42px);
+  font-size: clamp(32.5px, 2.7vw, 42px);
   font-weight: 580;
   line-height: 1;
 }
 
 .relative-spectrum-label span {
-  font-size: clamp(19px, 1.55vw, 26px);
+  font-size: clamp(23.8px, 1.9vw, 32.5px);
   font-weight: 650;
   margin-top: 8px;
 }
@@ -2869,7 +2905,7 @@ h3 {
   border-radius: 50%;
   display: flex;
   font-family: var(--font-display);
-  font-size: clamp(38px, 3.8vw, 66px);
+  font-size: clamp(42.6px, 3.8vw, 66px);
   font-weight: 620;
   justify-content: center;
   position: absolute;
@@ -2886,7 +2922,7 @@ h3 {
 .relative-spectrum-transition {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(24px, 2vw, 34px);
+  font-size: clamp(30px, 2.5vw, 38.1px);
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
@@ -2895,6 +2931,7 @@ h3 {
 }
 
 .malt-reference {
+  background: var(--ui-100);
   border: 1px solid var(--ui-00);
   bottom: 0;
   display: grid;
@@ -2905,6 +2942,7 @@ h3 {
   right: 0;
   top: 0;
   width: 34%;
+  z-index: 4;
 }
 
 .malt-reference-heading strong,
@@ -2914,11 +2952,11 @@ h3 {
 
 .malt-reference-heading strong {
   font-family: var(--font-mono);
-  font-size: clamp(13px, 1vw, 16px);
+  font-size: clamp(18px, 1.3vw, 20px);
 }
 
 .malt-reference-heading span {
-  font-size: clamp(16px, 1.2vw, 20px);
+  font-size: clamp(20px, 1.5vw, 25px);
   font-weight: 650;
   margin-top: 2px;
 }
@@ -2948,7 +2986,7 @@ h3 {
 .malt-reference-categories span {
   background: var(--ui-90);
   border: 1px solid var(--ui-70);
-  font-size: clamp(13px, .92vw, 15px);
+  font-size: clamp(18px, 1.2vw, 18px);
   line-height: 1;
   padding: 5px 6px;
 }
@@ -2960,7 +2998,7 @@ h3 {
 
 .malt-reference > p {
   border-top: 1px solid var(--ui-70);
-  font-size: clamp(15px, 1.08vw, 18px);
+  font-size: clamp(18px, 1.4vw, 22.5px);
   font-weight: 600;
   line-height: 1.25;
   margin: 0;
@@ -2993,7 +3031,7 @@ h3 {
 }
 
 .sensory-reference-touch-heading > span {
-  font-size: clamp(22px, 1.8vw, 30px);
+  font-size: clamp(27.5px, 2.3vw, 33.6px);
   font-weight: 650;
 }
 
@@ -3001,16 +3039,16 @@ h3 {
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  height: 110px;
+  height: clamp(140px, 15vh, 164px);
 }
 
 .sensory-reference-sample {
   border: 1px solid var(--ui-00);
   display: grid;
-  grid-template-columns: 32px minmax(0, 1fr);
+  grid-template-columns: 38px minmax(0, 1fr);
   min-height: 0;
   overflow: hidden;
-  padding: 9px 14px;
+  padding: 12px 16px;
   position: relative;
 }
 
@@ -3022,18 +3060,10 @@ h3 {
   background: var(--culture-pale-rose);
 }
 
-.sensory-reference-touch-hop .sensory-reference-sample-1 {
-  background: var(--culture-pale-green);
-}
-
-.sensory-reference-touch-hop .sensory-reference-sample-2 {
-  background: var(--culture-pale-lab-blue);
-}
-
 .sensory-reference-sample > span {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .sensory-reference-hidden-copy {
@@ -3050,13 +3080,13 @@ h3 {
 }
 
 .sensory-reference-hidden-copy strong {
-  font-size: clamp(25px, 2.25vw, 38px);
+  font-size: clamp(31.3px, 2.5vw, 42.6px);
   white-space: nowrap;
 }
 
 .sensory-reference-hidden-copy span {
   font-family: var(--font-body);
-  font-size: clamp(17px, 1.35vw, 22px);
+  font-size: clamp(21.3px, 1.7vw, 27.5px);
   font-weight: 650;
 }
 
@@ -3082,11 +3112,11 @@ h3 {
 
 .sensory-reference-category strong {
   font-family: var(--font-display);
-  font-size: clamp(25px, 2.25vw, 38px);
+  font-size: clamp(31.3px, 2.5vw, 42.6px);
 }
 
 .sensory-reference-category span {
-  font-size: clamp(17px, 1.35vw, 22px);
+  font-size: clamp(21.3px, 1.7vw, 27.5px);
   font-weight: 650;
 }
 
@@ -3096,12 +3126,20 @@ h3 {
 }
 
 .sensory-reference-product {
-  align-items: center;
+  align-items: start;
+  align-content: center;
   display: grid;
-  gap: 3px 12px;
+  gap: 6px 14px;
   grid-column: 2;
   grid-row: 1;
   grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: 0;
+}
+
+.sensory-reference-product > div,
+.sensory-reference-product > small {
+  align-self: center;
 }
 
 .sensory-reference-product > div strong,
@@ -3113,19 +3151,19 @@ h3 {
 
 .sensory-reference-product > div strong {
   font-family: var(--font-display);
-  font-size: clamp(17px, 1.42vw, 24px);
+  font-size: clamp(21.3px, 1.8vw, 30px);
   line-height: 1;
 }
 
 .sensory-reference-product > div span {
-  font-size: clamp(15px, 1.1vw, 18px);
+  font-size: clamp(18px, 1.4vw, 22.5px);
   font-weight: 600;
   margin-top: 3px;
 }
 
 .sensory-reference-product > small {
   font-family: var(--font-mono);
-  font-size: clamp(12px, .9vw, 15px);
+  font-size: clamp(18px, 1.1vw, 18px);
   font-weight: 600;
   text-align: right;
 }
@@ -3140,15 +3178,20 @@ h3 {
   padding-top: 5px;
 }
 
+.sensory-reference-touch-hop .sensory-reference-product p {
+  border-top: 0;
+  padding-top: 0;
+}
+
 .sensory-reference-product p strong {
   display: inline;
   font-family: var(--font-display);
-  font-size: clamp(14px, 1vw, 17px);
+  font-size: clamp(18px, 1.3vw, 21.3px);
 }
 
 .sensory-reference-product p span {
   display: inline;
-  font-size: clamp(15px, 1.05vw, 18px);
+  font-size: clamp(18px, 1.3vw, 22.5px);
   font-weight: 600;
   margin-top: 2px;
 }
@@ -3164,7 +3207,7 @@ h3 {
   border-bottom: 1px solid var(--ui-00);
   border-top: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(34px, min(3.5vw, 5.8vh), 60px);
+  font-size: clamp(38.1px, min(3.9vw, 5.8vh), 60px);
   font-weight: 720;
   inset: 0;
   line-height: 1.13;
@@ -3248,12 +3291,12 @@ h3 {
 
 .sensory-reference-labels strong {
   font-family: var(--font-display);
-  font-size: clamp(15px, 1.12vw, 19px);
+  font-size: clamp(18px, 1.4vw, 23.8px);
   line-height: 1;
 }
 
 .sensory-reference-labels span {
-  font-size: clamp(15px, 1.1vw, 18px);
+  font-size: clamp(18px, 1.4vw, 22.5px);
   font-weight: 600;
   line-height: 1.2;
   margin-top: 4px;
@@ -3262,7 +3305,7 @@ h3 {
 .sensory-reference-image-copy > p {
   background: var(--culture-pale-yellow);
   border: 1px solid var(--ui-00);
-  font-size: clamp(16px, 1.22vw, 20px);
+  font-size: clamp(20px, 1.5vw, 25px);
   font-weight: 650;
   line-height: 1.3;
   margin: 0;
@@ -3285,11 +3328,11 @@ h3 {
 
 .sensory-reference-action strong {
   font-family: var(--font-mono);
-  font-size: clamp(17px, 1.35vw, 22px);
+  font-size: clamp(21.3px, 1.7vw, 27.5px);
 }
 
 .sensory-reference-action span {
-  font-size: clamp(14px, 1vw, 17px);
+  font-size: clamp(18px, 1.3vw, 21.3px);
   font-weight: 600;
 }
 
@@ -3326,10 +3369,28 @@ h3 {
 }
 
 .reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="2"] .reference-spectrum-map,
-.reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="3"] .reference-spectrum-map,
+.reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="3"] .reference-spectrum-map {
+  width: 46%;
+}
+
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="3"] .reference-spectrum-map,
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="4"] .reference-spectrum-map {
-  width: 64%;
+  width: 60%;
+}
+
+.reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="2"] .malt-reference,
+.reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="3"] .malt-reference {
+  width: 52%;
+}
+
+.reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="3"] .malt-reference,
+.reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="4"] .malt-reference {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: 38%;
+}
+
+.reference-spectrum-reference-first .malt-reference-categories:empty {
+  display: none;
 }
 
 .reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="2"] .reference-spectrum-anchor.anchor-b,
@@ -3360,12 +3421,12 @@ h3 {
 
 .reference-spectrum-labels strong {
   font-family: var(--font-display);
-  font-size: clamp(22px, 2vw, 34px);
+  font-size: clamp(27.5px, 2.5vw, 38.1px);
   line-height: 1;
 }
 
 .reference-spectrum-labels span {
-  font-size: clamp(17px, 1.35vw, 22px);
+  font-size: clamp(21.3px, 1.7vw, 27.5px);
   font-weight: 650;
   margin-top: 6px;
 }
@@ -3374,14 +3435,14 @@ h3 {
 .reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="3"] .reference-spectrum-labels strong,
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="3"] .reference-spectrum-labels strong,
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="4"] .reference-spectrum-labels strong {
-  font-size: clamp(18px, 1.45vw, 25px);
+  font-size: clamp(22.5px, 1.8vw, 31.3px);
 }
 
 .reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="2"] .reference-spectrum-labels span,
 .reference-spectrum-has-inset:not(.reference-spectrum-reference-first)[data-reveal-state="3"] .reference-spectrum-labels span,
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="3"] .reference-spectrum-labels span,
 .reference-spectrum-has-inset.reference-spectrum-reference-first[data-reveal-state="4"] .reference-spectrum-labels span {
-  font-size: clamp(15px, 1.05vw, 18px);
+  font-size: clamp(18px, 1.3vw, 22.5px);
 }
 
 .reference-spectrum-track {
@@ -3414,7 +3475,7 @@ h3 {
   border-radius: 50%;
   display: flex;
   font-family: var(--font-display);
-  font-size: clamp(34px, 3.4vw, 58px);
+  font-size: clamp(38.1px, 3.8vw, 58px);
   font-weight: 620;
   justify-content: center;
   position: absolute;
@@ -3445,12 +3506,12 @@ h3 {
 
 .reference-spectrum-anchor strong {
   font-family: var(--font-display);
-  font-size: clamp(12px, .95vw, 15px);
+  font-size: clamp(18px, 1.2vw, 18px);
   line-height: 1;
 }
 
 .reference-spectrum-anchor small {
-  font-size: clamp(12px, .9vw, 14px);
+  font-size: clamp(18px, 1.1vw, 18px);
   font-weight: 600;
   line-height: 1.15;
   margin-top: 3px;
@@ -3459,7 +3520,7 @@ h3 {
 .reference-spectrum-key {
   background: var(--culture-pale-green);
   border: 1px solid var(--ui-00);
-  font-size: clamp(18px, 1.35vw, 22px);
+  font-size: clamp(22.5px, 1.7vw, 27.5px);
   font-weight: 650;
   margin: 0;
   padding: 8px 12px;
@@ -3469,7 +3530,7 @@ h3 {
 .reference-spectrum-transition {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(22px, 1.8vw, 31px);
+  font-size: clamp(27.5px, 2.3vw, 34.7px);
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
@@ -3480,7 +3541,7 @@ h3 {
 /* S20: keep the trace slide focused on the three jobs hops perform. */
 .hop-trace-question {
   border-bottom: 1px solid var(--ui-00);
-  font-size: clamp(30px, 2.6vw, 45px);
+  font-size: clamp(33.6px, 2.9vw, 45px);
   font-weight: 720;
   line-height: 1.17;
   margin: clamp(24px, 3vh, 38px) 0 0;
@@ -3513,7 +3574,7 @@ h3 {
 
 .hop-trace-functions .hop-trace-key {
   border: 0;
-  font-size: clamp(25px, 2vw, 35px);
+  font-size: clamp(31.3px, 2.5vw, 39.2px);
   margin: 0;
   padding: 0;
 }
@@ -3531,22 +3592,22 @@ h3 {
 }
 
 .hop-trace-functions .hop-trace-roles strong {
-  font-size: clamp(18px, 1.45vw, 25px);
+  font-size: clamp(22.5px, 1.8vw, 31.3px);
 }
 
 .hop-trace-functions .hop-trace-roles span {
-  font-size: clamp(18px, 1.35vw, 23px);
+  font-size: clamp(22.5px, 1.7vw, 28.8px);
 }
 
 .hop-trace-functions .hop-trace-roles p {
-  font-size: clamp(16px, 1.18vw, 20px);
+  font-size: clamp(20px, 1.5vw, 25px);
   font-weight: 600;
   line-height: 1.3;
   margin: 10px 0 0;
 }
 
 .hop-trace-supporting-copy {
-  font-size: clamp(17px, 1.3vw, 22px);
+  font-size: clamp(21.3px, 1.6vw, 27.5px);
   font-weight: 620;
   line-height: 1.35;
   margin: 0;
@@ -3556,7 +3617,7 @@ h3 {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
   bottom: clamp(18px, 2.2vw, 34px);
-  font-size: clamp(25px, 2.15vw, 38px);
+  font-size: clamp(31.3px, 2.7vw, 42.6px);
   font-weight: 720;
   left: clamp(18px, 2.2vw, 34px);
   line-height: 1.2;
@@ -3571,7 +3632,183 @@ h3 {
 /* S21: blind aroma comparison, guided prompt, variety reveal, then map prompt. */
 .hop-sensory-layout {
   gap: 10px;
-  grid-template-rows: auto 118px minmax(0, 1fr) auto auto;
+  grid-template-rows: auto 140px minmax(0, 1fr) auto auto;
+}
+
+.hop-reference-cards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 140px;
+}
+
+.hop-reference-card {
+  border: 1px solid var(--ui-00);
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  height: 140px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 12px 16px;
+}
+
+.hop-reference-card-1 {
+  background: var(--culture-pale-green);
+}
+
+.hop-reference-card-2 {
+  background: var(--culture-pale-lab-blue);
+}
+
+.hop-reference-number {
+  color: var(--ui-50);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.hop-reference-content {
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+}
+
+.hop-reference-blind,
+.hop-reference-revealed {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hop-reference-blind {
+  align-content: center;
+  display: grid;
+  gap: 3px;
+  opacity: 1;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  visibility: visible;
+}
+
+.hop-reference-blind strong,
+.hop-reference-blind span,
+.hop-reference-name strong,
+.hop-reference-name span,
+.hop-reference-revealed p strong,
+.hop-reference-revealed p span {
+  display: block;
+}
+
+.hop-reference-blind strong {
+  font-family: var(--font-display);
+  font-size: clamp(31.3px, 2.5vw, 42.6px);
+  line-height: 1;
+}
+
+.hop-reference-blind span {
+  font-size: clamp(20px, 1.5vw, 25px);
+  font-weight: 650;
+}
+
+.hop-reference-revealed {
+  align-content: center;
+  display: grid;
+  gap: 4px 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  opacity: 0;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  visibility: hidden;
+}
+
+.hop-reference-revealed.is-revealed {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hop-reference-name {
+  min-width: 0;
+}
+
+.hop-reference-name strong {
+  font-family: var(--font-display);
+  font-size: clamp(21.3px, 1.8vw, 30px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hop-reference-name span {
+  font-size: clamp(18px, 1.35vw, 22.5px);
+  font-weight: 650;
+  margin-top: 2px;
+}
+
+.hop-reference-revealed small {
+  align-self: center;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.hop-reference-revealed p {
+  align-items: baseline;
+  display: flex;
+  gap: 8px;
+  grid-column: 1 / -1;
+  margin: 0;
+  min-width: 0;
+}
+
+.hop-reference-revealed p strong {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 1.3vw, 21.3px);
+  white-space: nowrap;
+}
+
+.hop-reference-revealed p span {
+  font-size: clamp(18px, 1.25vw, 21.3px);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.sensory-reference-touch-hop[data-reveal-state="2"] .hop-reference-blind,
+.sensory-reference-touch-hop[data-reveal-state="3"] .hop-reference-blind {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+  .hop-sensory-layout {
+    grid-template-rows: auto 164px minmax(0, 1fr) auto auto;
+  }
+
+  .hop-reference-cards,
+  .hop-reference-card {
+    height: 164px;
+  }
+
+  .hop-reference-revealed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hop-reference-revealed small,
+  .hop-reference-revealed p {
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .hop-reference-revealed p {
+    flex-wrap: wrap;
+    gap: 2px 8px;
+  }
+
+  .hop-reference-revealed p strong,
+  .hop-reference-revealed p span {
+    white-space: normal;
+  }
 }
 
 .hop-sensory-stage {
@@ -3588,15 +3825,6 @@ h3 {
   position: absolute;
 }
 
-.sensory-reference-touch-hop[data-reveal-state="1"] .sensory-reference-hidden-copy {
-  opacity: 1;
-}
-
-.sensory-reference-touch-hop[data-reveal-state="2"] .sensory-reference-hidden-copy,
-.sensory-reference-touch-hop[data-reveal-state="3"] .sensory-reference-hidden-copy {
-  opacity: 0;
-}
-
 .sensory-reference-touch-hop[data-reveal-state="3"] .sensory-reference-question-first {
   opacity: 0;
 }
@@ -3611,10 +3839,10 @@ h3 {
 .hop-sensory-key {
   align-items: center;
   background: transparent;
-  border-bottom: 1px solid var(--ui-00);
+  border-bottom: 0;
   border-top: 1px solid var(--ui-00);
   display: flex;
-  font-size: clamp(30px, 2.65vw, 46px);
+  font-size: clamp(33.6px, 3vw, 46px);
   font-weight: 720;
   line-height: 1.2;
   margin: 0;
@@ -3634,7 +3862,7 @@ h3 {
 
 .hop-sensory-next p {
   align-self: center;
-  font-size: clamp(28px, 2.5vw, 44px);
+  font-size: clamp(35px, 2.8vw, 44px);
   font-weight: 720;
   line-height: 1.2;
   margin: 0;
@@ -3661,11 +3889,11 @@ h3 {
 }
 
 .hop-sensory-action span {
-  font-size: clamp(16px, 1.15vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
 }
 
 .hop-sensory-action em {
-  font-size: clamp(16px, 1.15vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   font-style: normal;
   font-weight: 750;
   white-space: nowrap;
@@ -3673,7 +3901,7 @@ h3 {
 
 .hop-sensory-caution {
   color: var(--ui-20);
-  font-size: clamp(14px, 1vw, 17px);
+  font-size: clamp(18px, 1.3vw, 21.3px);
   font-weight: 620;
   margin: 0;
   text-align: right;
@@ -3686,7 +3914,7 @@ h3 {
 }
 
 .reference-spectrum-heading > div > span {
-  font-size: clamp(22px, 1.8vw, 30px);
+  font-size: clamp(27.5px, 2.3vw, 33.6px);
   font-weight: 680;
   line-height: 1.1;
   padding-bottom: 5px;
@@ -3709,13 +3937,13 @@ h3 {
 }
 
 .reference-spectrum-beer-labeled strong {
-  font-size: clamp(27px, 2.3vw, 39px);
+  font-size: clamp(33.8px, 2.6vw, 43.7px);
   line-height: .8;
 }
 
 .reference-spectrum-beer-labeled small {
   font-family: var(--font-display);
-  font-size: clamp(11px, .85vw, 14px);
+  font-size: clamp(18px, 1.1vw, 18px);
   line-height: 1.05;
 }
 
@@ -3745,7 +3973,7 @@ h3 {
   align-items: center;
   border-bottom: 1px solid var(--ui-70);
   display: grid;
-  font-size: clamp(22px, 1.85vw, 31px);
+  font-size: clamp(27.5px, 2.3vw, 34.7px);
   font-weight: 700;
   gap: 12px;
   grid-template-columns: 30px minmax(0, 1fr);
@@ -3765,7 +3993,7 @@ h3 {
 .pair-describe-open-followups span {
   color: var(--culture-deep-periwinkle);
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   align-self: start;
 }
 
@@ -3776,7 +4004,7 @@ h3 {
 .beer-product-bridge {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(25px, 2.15vw, 37px);
+  font-size: clamp(31.3px, 2.7vw, 41.4px);
   font-weight: 720;
   line-height: 1.15;
   margin: 0;
@@ -3813,7 +4041,7 @@ h3 {
 }
 
 .fermentation-trace-heading > div:last-child > span {
-  font-size: clamp(25px, 2vw, 34px);
+  font-size: clamp(31.3px, 2.5vw, 38.1px);
   font-weight: 720;
   line-height: 1;
 }
@@ -3852,11 +4080,11 @@ h3 {
 
 .fermentation-trace-hero figcaption strong {
   font-family: var(--font-display);
-  font-size: clamp(16px, 1.2vw, 20px);
+  font-size: clamp(20px, 1.5vw, 25px);
 }
 
 .fermentation-trace-hero figcaption span {
-  font-size: clamp(16px, 1.1vw, 19px);
+  font-size: clamp(20px, 1.4vw, 23.8px);
   font-weight: 650;
   margin-top: 3px;
 }
@@ -3879,18 +4107,18 @@ h3 {
 .fermentation-trace-process strong {
   color: var(--culture-deep-periwinkle);
   font-family: var(--font-display);
-  font-size: clamp(22px, 1.8vw, 31px);
+  font-size: clamp(27.5px, 2.3vw, 34.7px);
   line-height: 1.08;
 }
 
 .fermentation-trace-process span {
-  font-size: clamp(21px, 1.7vw, 29px);
+  font-size: clamp(26.3px, 2.1vw, 32.5px);
   font-weight: 720;
   margin-top: 8px;
 }
 
 .fermentation-trace-process p {
-  font-size: clamp(18px, 1.38vw, 23px);
+  font-size: clamp(22.5px, 1.7vw, 28.8px);
   font-weight: 620;
   line-height: 1.38;
   margin: clamp(18px, 2.4vh, 28px) 0 0;
@@ -3911,14 +4139,14 @@ h3 {
 }
 
 .fermentation-equation p {
-  font-size: clamp(21px, 1.7vw, 29px);
+  font-size: clamp(26.3px, 2.1vw, 32.5px);
   font-weight: 760;
   line-height: 1.12;
 }
 
 .fermentation-equation small {
   font-family: var(--font-mono);
-  font-size: clamp(15px, 1.18vw, 20px);
+  font-size: clamp(18px, 1.5vw, 25px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -3932,7 +4160,7 @@ h3 {
 .fermentation-trace-memory {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(31px, 2.7vw, 47px);
+  font-size: clamp(34.7px, 3vw, 47px);
   font-weight: 760;
   grid-column: 1 / -1;
   line-height: 1.16;
@@ -3948,7 +4176,7 @@ h3 {
 }
 
 .fermentation-paths-heading .eyebrow {
-  font-size: clamp(17px, 1.2vw, 20px);
+  font-size: clamp(21.3px, 1.5vw, 25px);
   line-height: 1;
   margin: 0 0 2px;
 }
@@ -3960,14 +4188,14 @@ h3 {
 }
 
 .fermentation-paths-heading h2 {
-  font-size: clamp(38px, 3.2vw, 58px);
+  font-size: clamp(42.6px, 3.6vw, 58px);
   font-weight: 580;
   line-height: .86;
   margin: 0;
 }
 
 .fermentation-paths-heading > div > span {
-  font-size: clamp(19px, 1.4vw, 24px);
+  font-size: clamp(23.8px, 1.8vw, 30px);
   font-weight: 680;
   padding-bottom: 2px;
 }
@@ -4044,12 +4272,12 @@ h3 {
 
 .fermentation-path-concept > strong {
   font-family: var(--font-display);
-  font-size: clamp(19px, 1.52vw, 26px);
+  font-size: clamp(23.8px, 1.9vw, 32.5px);
   line-height: 1;
 }
 
 .fermentation-path-concept > span {
-  font-size: clamp(17px, 1.25vw, 21px);
+  font-size: clamp(21.3px, 1.6vw, 26.3px);
   font-weight: 700;
   border-bottom: 1px solid var(--ui-70);
   margin-top: 2px;
@@ -4057,7 +4285,7 @@ h3 {
 }
 
 .fermentation-path-concept > p {
-  font-size: clamp(15px, 1.05vw, 18px);
+  font-size: clamp(18px, 1.3vw, 22.5px);
   font-weight: 600;
   line-height: 1.25;
   margin: 5px 0 0;
@@ -4067,7 +4295,7 @@ h3 {
   border-top: 1px solid var(--ui-70);
   color: var(--culture-deep-periwinkle);
   font-family: var(--font-mono);
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(18px, 1.3vw, 20px);
   font-weight: 720;
   margin-top: 4px;
   padding-top: 3px;
@@ -4076,7 +4304,7 @@ h3 {
 .fermentation-path-concept > em {
   border-left: 3px solid var(--culture-bacteria-blue);
   color: var(--ui-20);
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(18px, 1.3vw, 20px);
   font-style: normal;
   font-weight: 600;
   line-height: 1.15;
@@ -4095,18 +4323,18 @@ h3 {
 
 .fermentation-path-flavour > strong {
   font-family: var(--font-display);
-  font-size: clamp(15px, 1.12vw, 19px);
+  font-size: clamp(18px, 1.4vw, 23.8px);
 }
 
 .fermentation-path-flavour > span {
-  font-size: clamp(15px, 1.05vw, 18px);
+  font-size: clamp(18px, 1.3vw, 22.5px);
   font-weight: 650;
 }
 
 .fermentation-path-flavour > small {
   border-top: 1px solid rgba(0, 0, 0, .3);
   font-family: var(--font-mono);
-  font-size: clamp(14px, .95vw, 16px);
+  font-size: clamp(18px, 1.2vw, 20px);
   font-weight: 650;
   margin-top: 4px;
   padding-top: 4px;
@@ -4115,7 +4343,7 @@ h3 {
 .fermentation-paths-key {
   background: var(--culture-bacteria-blue);
   border: 1px solid var(--ui-00);
-  font-size: clamp(19px, 1.4vw, 24px);
+  font-size: clamp(23.8px, 1.8vw, 30px);
   font-weight: 720;
   line-height: 1.18;
   margin: 0;
@@ -4155,7 +4383,7 @@ h3 {
 }
 
 .action-card strong {
-  font-size: clamp(22px, 2vw, 32px);
+  font-size: clamp(27.5px, 2.5vw, 35.8px);
   line-height: 1.15;
 }
 
@@ -4217,14 +4445,14 @@ h3 {
 }
 
 .mystery-beer strong {
-  font-size: clamp(30px, 3.4vw, 54px);
+  font-size: clamp(33.6px, 3.8vw, 54px);
   line-height: .98;
 }
 
 .loop-question {
   border-bottom: 1px solid var(--ui-00);
   border-top: 1px solid var(--ui-00);
-  font-size: clamp(36px, 4.6vw, 72px);
+  font-size: clamp(40.3px, 4.6vw, 72px);
   font-weight: 700;
   line-height: 1.05;
   padding: 20px 0 24px;
@@ -4243,7 +4471,7 @@ h3 {
   color: var(--type-black);
   cursor: pointer;
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   min-height: 44px;
   padding: 0 14px;
@@ -4252,7 +4480,7 @@ h3 {
 
 .reveal-button-large {
   align-self: start;
-  font-size: 18px;
+  font-size: 22.5px;
   min-height: 58px;
   padding: 0 22px;
   width: max-content;
@@ -4288,13 +4516,13 @@ h3 {
 
 .ingredient-word strong {
   font-family: var(--font-display);
-  font-size: clamp(38px, 4.4vw, 72px);
+  font-size: clamp(42.6px, 4.4vw, 72px);
   font-weight: 450;
   line-height: .9;
 }
 
 .ingredient-word span {
-  font-size: clamp(18px, 1.35vw, 24px);
+  font-size: clamp(22.5px, 1.7vw, 30px);
   font-weight: 650;
   line-height: 1.2;
 }
@@ -4314,18 +4542,18 @@ h3 {
 
 .revealed-beer span {
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .revealed-beer strong {
-  font-size: clamp(24px, 2.3vw, 36px);
+  font-size: clamp(30px, 2.6vw, 40.3px);
   line-height: 1.05;
 }
 
 .revealed-beer p {
   color: var(--ui-50);
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -4346,7 +4574,7 @@ h3 {
 
 .touch-instruction,
 .next-question {
-  font-size: clamp(20px, 1.7vw, 28px);
+  font-size: clamp(25px, 2.1vw, 35px);
   font-weight: 650;
   line-height: 1.25;
   margin: 0;
@@ -4360,7 +4588,7 @@ h3 {
 .spectrum-labels {
   display: flex;
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   justify-content: space-between;
   margin-bottom: 24px;
@@ -4380,7 +4608,7 @@ h3 {
   border-radius: 999px;
   display: flex;
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 18px;
   height: 46px;
   justify-content: center;
   position: absolute;
@@ -4420,13 +4648,13 @@ h3 {
 
 .ingredient-map strong {
   font-family: var(--font-display);
-  font-size: clamp(38px, 4vw, 66px);
+  font-size: clamp(42.6px, 4vw, 66px);
   font-weight: 450;
   line-height: .95;
 }
 
 .ingredient-map span {
-  font-size: clamp(18px, 1.45vw, 24px);
+  font-size: clamp(22.5px, 1.8vw, 30px);
   font-weight: 600;
 }
 
@@ -4473,7 +4701,7 @@ h3 {
 .four-ingredients-heading span,
 .brewing-process-heading span,
 .three-team-preview-heading span {
-  font-size: clamp(20px, 1.55vw, 27px);
+  font-size: clamp(25px, 1.9vw, 33.8px);
   font-weight: 700;
 }
 
@@ -4507,7 +4735,7 @@ h3 {
 .four-ingredient-card > span,
 .team-number {
   font-family: var(--font-mono);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .four-ingredient-card > div {
@@ -4524,14 +4752,14 @@ h3 {
 
 .four-ingredient-card em {
   display: block;
-  font-size: clamp(22px, 1.8vw, 30px);
+  font-size: clamp(27.5px, 2.3vw, 33.6px);
   font-style: normal;
   font-weight: 750;
   margin-top: 8px;
 }
 
 .four-ingredient-card p {
-  font-size: clamp(18px, 1.45vw, 24px);
+  font-size: clamp(22.5px, 1.8vw, 30px);
   font-weight: 650;
   line-height: 1.32;
   margin: 0;
@@ -4561,13 +4789,13 @@ h3 {
 
 .four-ingredients-close strong,
 .three-team-close strong {
-  font-size: clamp(21px, 1.75vw, 29px);
+  font-size: clamp(26.3px, 2.2vw, 32.5px);
   line-height: 1.25;
 }
 
 .four-ingredients-close p,
 .three-team-close p {
-  font-size: clamp(16px, 1.25vw, 21px);
+  font-size: clamp(20px, 1.6vw, 26.3px);
   line-height: 1.35;
   margin: 0;
   max-width: 47%;
@@ -4632,7 +4860,7 @@ h3 {
 
 .brewing-process-steps li > span {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .brewing-process-steps strong,
@@ -4642,20 +4870,20 @@ h3 {
 
 .brewing-process-steps strong {
   font-family: var(--font-display);
-  font-size: clamp(17px, 1.25vw, 22px);
+  font-size: clamp(21.3px, 1.6vw, 27.5px);
   font-weight: 650;
   line-height: 1.05;
 }
 
 .brewing-process-steps em {
-  font-size: clamp(16px, 1.05vw, 19px);
+  font-size: clamp(20px, 1.3vw, 23.8px);
   font-style: normal;
   font-weight: 750;
   margin-top: 3px;
 }
 
 .brewing-process-steps p {
-  font-size: clamp(13px, .82vw, 16px);
+  font-size: clamp(18px, 1vw, 20px);
   line-height: 1.32;
   margin: 8px 0 0;
 }
@@ -4687,12 +4915,12 @@ h3 {
 
 .our-brew-day-label strong {
   font-family: var(--font-display);
-  font-size: clamp(19px, 1.4vw, 24px);
+  font-size: clamp(23.8px, 1.8vw, 30px);
   white-space: nowrap;
 }
 
 .our-brew-day-label span {
-  font-size: clamp(14px, .95vw, 17px);
+  font-size: clamp(18px, 1.2vw, 21.3px);
   font-weight: 700;
 }
 
@@ -4715,30 +4943,30 @@ h3 {
 
 .our-brew-day-flow strong {
   font-family: var(--font-mono);
-  font-size: clamp(12px, .86vw, 16px);
+  font-size: clamp(18px, 1.1vw, 20px);
 }
 
 .our-brew-day-flow span {
-  font-size: clamp(13px, .9vw, 16px);
+  font-size: clamp(18px, 1.1vw, 20px);
   font-weight: 750;
 }
 
 .our-brew-day-flow b {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   margin: 0 9px;
 }
 
 .our-brew-day > p {
   border-left: 1px solid var(--ui-00);
-  font-size: clamp(13px, .86vw, 16px);
+  font-size: clamp(18px, 1.1vw, 20px);
   line-height: 1.35;
   margin: 0;
   padding-left: 14px;
 }
 
 .brewing-process-transition {
-  font-size: clamp(18px, 1.35vw, 23px);
+  font-size: clamp(22.5px, 1.7vw, 28.8px);
   font-weight: 700;
   margin: 0;
   opacity: 0;
@@ -4752,7 +4980,7 @@ h3 {
 
 @media (max-width: 1100px) {
   .brewing-process-heading h2 {
-    font-size: 36px;
+    font-size: 40.3px;
   }
 
   .brewing-process-heading > div {
@@ -4760,7 +4988,7 @@ h3 {
   }
 
   .brewing-process-heading span {
-    font-size: 19px;
+    font-size: 23.8px;
   }
 
   .our-brew-day {
@@ -4818,13 +5046,13 @@ h3 {
 
 .team-beer-name strong {
   font-family: var(--font-display);
-  font-size: clamp(32px, min(3.2vw, 5.3vh), 52px);
+  font-size: clamp(35.8px, min(3.6vw, 5.3vh), 52px);
   font-weight: 560;
   line-height: .98;
 }
 
 .team-beer-name span {
-  font-size: clamp(21px, 1.55vw, 27px);
+  font-size: clamp(26.3px, 1.9vw, 33.8px);
   font-weight: 750;
   margin-top: 8px;
 }
@@ -4836,12 +5064,12 @@ h3 {
 
 .team-focus strong {
   font-family: var(--font-mono);
-  font-size: clamp(15px, 1.05vw, 19px);
+  font-size: clamp(18px, 1.3vw, 23.8px);
 }
 
 .team-focus span,
 .team-beer > p span {
-  font-size: clamp(17px, 1.25vw, 22px);
+  font-size: clamp(21.3px, 1.6vw, 27.5px);
   font-weight: 700;
 }
 
@@ -4851,7 +5079,7 @@ h3 {
 
 .team-beer > p strong {
   font-family: var(--font-display);
-  font-size: clamp(21px, 1.7vw, 29px);
+  font-size: clamp(26.3px, 2.1vw, 32.5px);
 }
 
 .taster-maker-closing-slide {
@@ -4882,7 +5110,7 @@ h3 {
 }
 
 .taster-maker-summary {
-  font-size: clamp(28px, 2.6vw, 44px);
+  font-size: clamp(35px, 2.9vw, 44px);
   font-weight: 700;
   margin: 0;
 }
@@ -4900,7 +5128,7 @@ h3 {
 }
 
 .taster-maker-next span {
-  font-size: clamp(25px, 2vw, 34px);
+  font-size: clamp(31.3px, 2.5vw, 38.1px);
   font-weight: 750;
   margin-top: 12px;
 }
@@ -4940,7 +5168,7 @@ h3 {
   border: 1px solid var(--ui-00);
   bottom: 18px;
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   font-variant-numeric: tabular-nums;
   padding: 8px 11px;
   position: fixed;
@@ -4971,7 +5199,7 @@ h3 {
 
 .template-index a {
   display: flex;
-  font-size: clamp(24px, 3vw, 44px);
+  font-size: clamp(30px, 3.4vw, 44px);
   font-weight: 650;
   justify-content: space-between;
   padding: 20px 0 24px;
@@ -5142,7 +5370,7 @@ h3 {
 
   .profile-story-body,
   .season-one-body {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 12px;
   }
 
@@ -5169,7 +5397,7 @@ h3 {
   }
 
   .season-keyword-1 {
-    font-size: 19px;
+    font-size: 23.8px;
   }
 
   .season-transition {
@@ -5182,7 +5410,7 @@ h3 {
   }
 
   .tasting-lens-headline {
-    font-size: 34px;
+    font-size: 38.1px;
   }
 
   .slow-down-message {
@@ -5191,7 +5419,7 @@ h3 {
   }
 
   .slow-down-response {
-    font-size: 20px;
+    font-size: 25px;
     min-height: 48px;
   }
 
@@ -5212,11 +5440,11 @@ h3 {
   }
 
   .tasting-framework-step strong {
-    font-size: 21px;
+    font-size: 26.3px;
   }
 
   .tasting-framework-step p {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 7px;
   }
 
@@ -5231,10 +5459,10 @@ h3 {
   }
 
   .tasting-framework-final span {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .tasting-framework-final strong {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
