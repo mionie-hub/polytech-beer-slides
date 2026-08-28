@@ -244,6 +244,7 @@ const slides = [
     theme: "system",
     code: "M&A / GLOBAL / 2016",
     ko: "세계 1위가,\n세계 2위를 샀다.",
+    revealTitle: true,
     left: "AB INBEV",
     right: "SABMILLER",
   },
@@ -1267,7 +1268,7 @@ function renderSlide(slide, index) {
           ${comparisonPanel(slide.left, slide.leftMedia, slide.leftAlt, "left", slide.leftFit, slide.leftClass, slide.leftPosition, slide.leftBadge)}
           ${comparisonPanel(slide.right, slide.rightMedia, slide.rightAlt, "right", slide.rightFit, slide.rightClass, slide.rightPosition, slide.rightBadge)}
         </div>
-        <h1 class="title-ko compare-title">${nl(slide.ko)}</h1>
+        <h1 class="title-ko compare-title${slide.revealTitle ? " reveal-item" : ""}"${slide.revealTitle ? ' data-reveal="1"' : ""}>${nl(slide.ko)}</h1>
       </div>
     `;
   } else if (slide.kind === "system-contrast") {
