@@ -78,7 +78,7 @@ const slides = [
     subReveal: 3,
     tasteNumber: 2,
     tasteName: "Guinness Original / Extra Stout",
-    tasteReveal: 2,
+    tasteReveal: 4,
   },
   {
     kind: "compare",
