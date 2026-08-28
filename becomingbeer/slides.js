@@ -155,7 +155,8 @@ const slides = [
     kind: "statement",
     theme: "system",
     code: "M&A / ASAHI / TEASER",
-    ko: "새 기술을 적극적으로 받아들이되,\n무엇을 잃으면 안 되는지를\n확인할 기준을 남겨둔 것",
+    ko: '<span class="asahi-criterion-line">새 기술을 적극적으로 받아들이되,</span>\n<span class="asahi-criterion-line">무엇을 잃으면 안 되는지를</span>\n<span class="asahi-criterion-line">확인할 기준을 남겨둔 것</span>',
+    titleClass: "title-asahi-criterion",
     sub: "PILSNER URQUELL → ASAHI",
     visual: "",
     posterMode: "question-teaser",
@@ -1149,7 +1150,7 @@ function renderSlide(slide, index) {
       html += `
         <div class="safe statement-grid">
           <div class="copy-col">
-            <h1 class="title-ko">${nl(slide.ko)}</h1>
+            <h1 class="title-ko ${slide.titleClass ?? ""}">${nl(slide.ko)}</h1>
             ${slide.sub ? `<p class="sub ${slide.subClass ?? ""}">${bodyText(slide.sub)}</p>` : ""}
             ${slide.revealStatement ? `<p class="statement-reveal reveal-item" data-reveal="1">${nl(slide.revealStatement)}</p>` : ""}
             ${slide.keywords ? `<div class="research-keywords">${slide.keywords.map((keyword) => `<span>${keyword}</span>`).join("")}</div>` : ""}
@@ -1160,7 +1161,7 @@ function renderSlide(slide, index) {
     } else {
       html += `
         <div class="safe copy-col statement-only">
-          <h1 class="title-ko">${nl(slide.ko)}</h1>
+          <h1 class="title-ko ${slide.titleClass ?? ""}">${nl(slide.ko)}</h1>
           ${slide.sub ? `<p class="sub ${slide.subClass ?? ""}">${bodyText(slide.sub)}</p>` : ""}
           ${slide.revealStatement ? `<p class="statement-reveal reveal-item" data-reveal="1">${nl(slide.revealStatement)}</p>` : ""}
           ${slide.keywords ? `<div class="research-keywords">${slide.keywords.map((keyword) => `<span>${keyword}</span>`).join("")}</div>` : ""}

@@ -945,6 +945,17 @@ body.is-export .slide {
   font-size: 112px;
 }
 
+.poster-question-teaser .title-ko.title-asahi-criterion {
+  font-size: 56px;
+  line-height: 1.16;
+  max-width: 100%;
+}
+
+.title-asahi-criterion .asahi-criterion-line {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .poster-question-teaser .statement-only > .sub {
   color: #777770;
   font-family: var(--font-evidence);
@@ -2904,6 +2915,7 @@ body.is-export .kind-finale .bottom-caption {
   .layout-evidence-wide .two-col .title-ko { font-size: 58px; }
   .statement-reveal { font-size: 40px; margin-top: 28px; padding-top: 20px; }
   .poster-question-teaser .statement-only > .title-ko { font-size: 88px; }
+  .poster-question-teaser .title-ko.title-asahi-criterion { font-size: 38px; }
   .poster-thesis-winter .statement-only .title-ko { font-size: 76px; }
   .finale-thesis { font-size: 72px; }
   .finale-context { font-size: 20px; margin-top: 22px; }
