@@ -1211,6 +1211,20 @@ body.is-export .center-punch span {
   z-index: 32;
 }
 
+.taste-moment-lead {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 180ms ease, transform 220ms ease, visibility 0s linear 0s;
+  visibility: visible;
+}
+
+.slide.has-started .taste-moment-lead {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 180ms ease, transform 220ms ease, visibility 0s linear 220ms;
+  visibility: hidden;
+}
+
 .taste-moment .tasting-cue {
   gap: 24px;
   margin: 0;

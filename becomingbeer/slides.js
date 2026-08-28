@@ -229,7 +229,7 @@ const slides = [
     visual: "COLD CHAIN AS PRODUCT",
     tasteNumber: 4,
     tasteName: "Budweiser",
-    tasteReveal: 3,
+    tasteLead: true,
     tastePrompt: "BLIND REVEAL",
   },
   {
@@ -1015,6 +1015,14 @@ function renderSlide(slide, index) {
   const hideChrome = slide.kind === "end" && index === slides.length - 1;
   if (slide.kind !== "cover" && !hideChrome) html += chrome(slide);
   html += actCue(slide);
+  if (slide.tasteLead) {
+    html += `
+      <aside class="taste-moment taste-moment-lead" aria-label="Taste ${String(slide.tasteNumber).padStart(2, "0")}: ${slide.tasteName}">
+        ${tastingCue(slide)}
+        ${slide.tastePrompt ? `<p>${slide.tastePrompt}</p>` : ""}
+      </aside>
+    `;
+  }
   const bodyStart = html.length;
 
   if (slide.kind === "cover") {
@@ -1385,6 +1393,7 @@ function applyRevealState(index) {
   slide?.classList.toggle("has-question-keywords", state >= 1);
   slide?.classList.toggle("has-question-image", state >= 1);
   slide?.classList.toggle("has-taste-body", state >= 1);
+  slide?.classList.toggle("has-started", state >= 1);
 
   const brandStage = slide?.querySelector(".brand-stage");
   if (brandStage) {
