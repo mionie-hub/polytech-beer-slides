@@ -253,6 +253,7 @@ const slides = [
     theme: "system",
     code: "M&A / GLOBAL / DIVESTITURE",
     ko: "너무 커져서,\n맥주를 다시 팔아야 했다.",
+    revealStatement: "Pilsner Urquell",
     visual: "REGULATORY REMEDY / ASAHI FLOW",
   },
   {
