@@ -106,6 +106,8 @@ const slides = [
     ko: "너무 익숙해서,\n혁명인 줄 모른다.",
     visual: "GOLDEN STANDARD / RADICAL HISTORY",
     revealTitle: true,
+    centerReveal: "Pilsner",
+    centerRevealStep: 2,
   },
   {
     kind: "giant",
@@ -1325,6 +1327,14 @@ function renderSlide(slide, index) {
           <p class="finale-signature">${slide.signature}</p>
           <a class="finale-email" href="mailto:${slide.contact}">${slide.contact}</a>
         </div>
+      </div>
+    `;
+  }
+
+  if (slide.centerReveal) {
+    html += `
+      <div class="center-punch reveal-item" data-reveal="${slide.centerRevealStep ?? 2}" aria-label="${slide.centerReveal}">
+        <span>${slide.centerReveal}</span>
       </div>
     `;
   }

@@ -1071,6 +1071,50 @@ body.is-export .reveal-item {
   visibility: visible;
 }
 
+.center-punch {
+  align-items: center;
+  background: var(--poster-mustard);
+  display: grid;
+  height: 44%;
+  inset: 50% 0 auto;
+  justify-items: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-50%) scaleY(0.08);
+  transform-origin: center;
+  transition: opacity 180ms ease, transform 280ms cubic-bezier(0.2, 0.9, 0.2, 1), visibility 0s linear 280ms;
+  z-index: 24;
+}
+
+.center-punch.is-revealed,
+body.is-export .center-punch {
+  transform: translateY(-50%) scaleY(1);
+  transition-delay: 0s;
+}
+
+.center-punch span {
+  font-family: var(--font-evidence);
+  font-size: 300px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.82;
+  opacity: 0;
+  transform: scale(0.84);
+  transition: opacity 140ms ease 150ms, transform 260ms cubic-bezier(0.2, 0.9, 0.2, 1) 120ms;
+}
+
+.center-punch.is-revealed span,
+body.is-export .center-punch span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 1280px) {
+  .center-punch span {
+    font-size: 220px;
+  }
+}
+
 /* Mori specimen geometry translated into a restrained tasting signature. */
 .tasting-cue {
   align-items: center;
