@@ -1996,6 +1996,17 @@ body.is-export .center-punch span {
   min-height: 0;
 }
 
+.giant-media-stage {
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+}
+
+.giant-media-stage > .giant-media {
+  height: 100%;
+  width: 100%;
+}
+
 .giant-media.is-landscape-evidence {
   align-self: center;
   aspect-ratio: 16 / 9;

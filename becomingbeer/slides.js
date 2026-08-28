@@ -223,11 +223,13 @@ const slides = [
     valueClass: "mori-reefers",
     posterMode: "number-reefers",
     sub: "REFRIGERATED RAILCARS",
+    subReveal: 2,
     subLeadMori: true,
+    mediaReveal: 2,
     visual: "COLD CHAIN AS PRODUCT",
     tasteNumber: 4,
     tasteName: "Budweiser",
-    tasteReveal: 2,
+    tasteReveal: 3,
     tastePrompt: "BLIND REVEAL",
   },
   {
@@ -1193,6 +1195,9 @@ function renderSlide(slide, index) {
     `;
   } else if (slide.kind === "giant") {
     const giantMedia = slide.media ? primaryMedia(slide, "giant-media") : "";
+    const stagedGiantMedia = slide.mediaReveal
+      ? `<div class="giant-media-stage reveal-item" data-reveal="${slide.mediaReveal}">${giantMedia}</div>`
+      : giantMedia;
     html += `
       <div class="giant ${slide.media ? "giant-with-media" : ""}">
         <div class="giant-copy">
@@ -1200,7 +1205,7 @@ function renderSlide(slide, index) {
           ${slide.revealUnit ? `<p class="giant-unit reveal-item" data-reveal="1">${slide.revealUnit}</p>` : ""}
           ${slide.sub ? `<p class="giant-sub${slide.subReveal ? " reveal-item" : ""}"${slide.subReveal ? ` data-reveal="${slide.subReveal}"` : ""}>${giantSub(slide)}</p>` : ""}
         </div>
-        ${giantMedia}
+        ${stagedGiantMedia}
       </div>
       ${slide.media || !slide.visual ? "" : `<p class="bottom-caption caption">${slide.visual}</p>`}
     `;
