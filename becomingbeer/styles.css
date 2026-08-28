@@ -1071,6 +1071,32 @@ body.is-export .reveal-item {
   visibility: visible;
 }
 
+.image-pair-reveal {
+  background: var(--black);
+  border: 1px solid var(--black);
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 0.82fr 1.18fr;
+  inset: 16.5% 5.2% 8.2%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 28;
+}
+
+.image-pair-reveal figure {
+  background: var(--paper);
+  margin: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.image-pair-reveal img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .center-punch {
   align-items: center;
   background: var(--poster-mustard);

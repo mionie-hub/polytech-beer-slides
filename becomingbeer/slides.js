@@ -314,6 +314,19 @@ const slides = [
     actThesis: "표준의 시대, 다시 ‘다름’을 선택한다.",
     ko: "맥주를 만들기 전에,\n양조장부터 만들었다.",
     visual: "SCRAP BREWHOUSE / KEN GROSSMAN",
+    secondaryMediaReveal: 2,
+    secondaryMedia: [
+      {
+        src: "./assets/media/hop-cone-closeup.jpg",
+        alt: "A close-up view of a green hop cone",
+        position: "50% 50%",
+      },
+      {
+        src: "./assets/media/hop-field-sierra-nevada.jpg",
+        alt: "Hop harvest in Sierra Nevada's Chico hop field",
+        position: "50% 50%",
+      },
+    ],
   },
   {
     kind: "giant",
@@ -1341,6 +1354,18 @@ function renderSlide(slide, index) {
           <p class="finale-signature">${slide.signature}</p>
           <a class="finale-email" href="mailto:${slide.contact}">${slide.contact}</a>
         </div>
+      </div>
+    `;
+  }
+
+  if (slide.secondaryMedia?.length) {
+    html += `
+      <div class="image-pair-reveal reveal-item" data-reveal="${slide.secondaryMediaReveal ?? 1}">
+        ${slide.secondaryMedia.map((item) => `
+          <figure>
+            <img src="${item.src}" alt="${item.alt ?? ""}" style="object-position:${item.position ?? "50% 50%"};" />
+          </figure>
+        `).join("")}
       </div>
     `;
   }
