@@ -53,7 +53,7 @@
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr);
   min-height: 0;
-  padding: clamp(16px, 1.8vw, 28px);
+  padding: clamp(14px, 1.4vw, 22px);
 }
 
 .s2-team-card[data-team="pink"] { background: var(--culture-pale-rose); }
@@ -70,7 +70,7 @@
   font-family: var(--font-display);
   font-size: clamp(30px, 2.8vw, 46px);
   line-height: .96;
-  margin: 10px 0 14px;
+  margin: 8px 0 10px;
   min-height: 1.92em;
 }
 
@@ -88,7 +88,7 @@
   font-size: clamp(28px, 2.05vw, 36px);
   font-weight: 700;
   line-height: 1.1;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .s2-holding-instruction {
