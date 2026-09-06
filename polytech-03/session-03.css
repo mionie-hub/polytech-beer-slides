@@ -501,6 +501,16 @@
 .s3-station-copy > p:last-child { background: var(--s3-pale-teal); border: 1px solid var(--ui-00); font-size: clamp(21px, 1.65vw, 28px); font-weight: 620; line-height: 1.35; margin: 0; padding: 13px; }
 
 /* S10 */
+.s3-siphon-scene-slide { background: var(--ui-100); }
+.s3-siphon-scene-layout { display: block; padding: 0; position: relative; }
+.s3-siphon-scene-image { inset: 0; margin: 0; overflow: hidden; position: absolute; }
+.s3-siphon-scene-image::after { background: linear-gradient(90deg, rgba(255, 255, 255, .96) 0%, rgba(255, 255, 255, .78) 26%, rgba(255, 255, 255, 0) 52%); content: ""; inset: 0; position: absolute; }
+.s3-siphon-scene-image img { height: 100%; object-fit: contain; object-position: right center; width: 100%; }
+.s3-siphon-scene-copy { align-content: center; display: grid; height: 100%; padding: clamp(34px, 4vw, 70px); position: relative; width: 48%; z-index: 1; }
+.s3-siphon-scene-copy h1 { font-size: clamp(72px, min(8.1vw, 12vh), 138px); line-height: .84; margin: 10px 0 24px; }
+.s3-siphon-scene-copy > p:last-child { font-size: clamp(24px, 2vw, 34px); font-weight: 700; line-height: 1.35; margin: 0; }
+
+/* S10A */
 .s3-siphon-layout { grid-template-columns: .9fr 1.1fr; grid-template-rows: minmax(0, 1fr) auto; }
 .s3-siphon-copy { align-self: center; }
 .s3-siphon-copy h1 { font-size: clamp(62px, min(6.5vw, 9.7vh), 108px); line-height: .84; margin: 10px 0 20px; }
@@ -515,18 +525,18 @@
 .s3-target-vessel > * { position: relative; z-index: 1; }
 .s3-source-vessel span,
 .s3-target-vessel span,
-.s3-siphon-line span { font-family: var(--font-mono); font-size: 16px; font-weight: 800; text-align: center; }
+.s3-siphon-line span { font-family: var(--font-mono); font-size: 20px; font-weight: 800; text-align: center; }
 .s3-source-vessel em,
 .s3-target-vessel em,
-.s3-siphon-line em { font-size: 14px; font-style: normal; font-weight: 750; text-align: center; }
+.s3-siphon-line em { font-size: 20px; font-style: normal; font-weight: 750; text-align: center; }
 .s3-source-vessel i { background: var(--ui-00); bottom: 5px; height: 7px; left: 5px; position: absolute; right: 5px; }
 .s3-siphon-line { align-self: stretch; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; padding: 12px 0; }
 .s3-siphon-line i { border-left: 8px solid var(--s3-teal); border-radius: 16px 16px 0 0; border-right: 8px solid var(--s3-teal); border-top: 8px solid var(--s3-teal); height: 80%; width: 75%; }
 .s3-siphon-rules { display: grid; gap: 8px; grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); }
 .s3-siphon-rules p { border: 1px solid var(--ui-00); display: grid; gap: 4px 10px; grid-template-columns: auto 1fr; margin: 0; padding: 10px 12px; }
-.s3-siphon-rules span { font-family: var(--font-mono); font-size: 16px; }
+.s3-siphon-rules span { font-family: var(--font-mono); font-size: 20px; }
 .s3-siphon-rules strong { font-family: var(--font-display); font-size: clamp(19px, 1.55vw, 27px); }
-.s3-siphon-rules em { font-size: clamp(16px, 1.2vw, 20px); font-style: normal; font-weight: 650; grid-column: 2; }
+.s3-siphon-rules em { font-size: 20px; font-style: normal; font-weight: 650; grid-column: 2; }
 
 /* S11 */
 .s3-prime-layout { grid-template-rows: auto minmax(0, 1fr) auto auto; }
@@ -537,11 +547,15 @@
 .s3-prime-cards h2 { font-family: var(--font-display); font-size: clamp(25px, 2.2vw, 38px); line-height: .92; margin: 8px 0; min-height: 1.84em; }
 .s3-prime-cards strong { font-family: var(--font-display); font-size: clamp(58px, 5.5vw, 92px); line-height: .9; }
 .s3-prime-cards p { border-top: 1px solid var(--ui-00); font-size: 18px; font-weight: 700; margin: 10px 0 0; padding-top: 8px; width: 100%; }
-.s3-prime-chain { align-items: center; background: var(--s3-pale-teal); border: 1px solid var(--ui-00); display: flex; justify-content: center; padding: 10px; }
+.s3-prime-chain { align-items: center; background: var(--s3-pale-teal); border: 1px solid var(--ui-00); display: grid; gap: 8px; grid-template-columns: 1fr auto 1.35fr auto 1fr; padding: 10px; }
 .s3-prime-chain span,
-.s3-prime-chain strong { font-family: var(--font-display); font-size: clamp(21px, 1.75vw, 30px); font-weight: 650; text-align: center; }
-.s3-prime-chain b { font-size: 25px; padding: 0 16px; }
-.s3-prime-rule { background: var(--ui-00); color: var(--ui-100); font-size: clamp(21px, 1.75vw, 30px); }
+.s3-prime-chain strong { font-family: var(--font-display); font-size: clamp(20px, 1.55vw, 27px); font-weight: 650; line-height: 1.05; text-align: center; }
+.s3-prime-chain b { font-size: 25px; padding: 0 5px; }
+.s3-prime-rule { align-items: center; background: var(--ui-00); color: var(--ui-100); display: flex; font-size: clamp(20px, 1.55vw, 27px); gap: 16px; justify-content: space-between; text-align: left; }
+.s3-prime-rule > span { flex: 1; }
+.s3-prime-rule a { align-items: center; border: 1px solid var(--ui-100); color: inherit; display: inline-flex; flex: 0 0 auto; font-family: var(--font-mono); font-size: 20px; font-weight: 800; gap: 7px; padding: 7px 10px; text-decoration: none; }
+.s3-prime-rule a:hover,
+.s3-prime-rule a:focus-visible { background: var(--ui-100); color: var(--ui-00); outline: none; }
 
 /* S12 */
 .s3-fill-slide { background: var(--s3-pale-amber); }
@@ -694,6 +708,9 @@
   .s3-package-path small { font-size: 15px; }
   .s3-station-copy h1,
   .s3-siphon-copy h1 { font-size: 54px; }
+  .s3-siphon-scene-copy { padding: 30px; width: 51%; }
+  .s3-siphon-scene-copy h1 { font-size: 64px; }
+  .s3-siphon-scene-copy > p:last-child { font-size: 22px; }
   .s3-role-grid strong { font-size: 18px; }
   .s3-role-grid p { font-size: 13px; }
   .s3-timeline strong { font-size: 17px; }

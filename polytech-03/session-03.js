@@ -1,4 +1,4 @@
-import { session03Data } from "./session-03-data.js?v=20260904-01";
+import { session03Data } from "./session-03-data.js?v=20260904-02";
 
 const teamOrder = ["pink", "green", "yellow"];
 
@@ -75,7 +75,7 @@ function renderPrimeCards() {
         <h2>${escapeHtml(team.style)}</h2>
         <strong>${team.prime.toFixed(1)}g</strong>
         <em>DEXTROSE / 500mL PET</em>
-        <p>예상 ${escapeHtml(team.bottleEstimate)}병</p>
+        <p>TARGET ${team.targetCo2.toFixed(2)} vol CO₂</p>
       </article>`;
   }).join("");
 }
