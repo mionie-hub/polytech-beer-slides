@@ -252,6 +252,13 @@
 /* S03 */
 .s3-yeast-layout { align-content: center; }
 
+.s3-yeast-question {
+  font-size: 54px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  word-break: keep-all;
+}
+
 .s3-fermentation-path {
   align-items: stretch;
   display: grid;
