@@ -313,6 +313,14 @@
 
 /* S04 */
 .s3-lab-layout { grid-template-rows: auto minmax(0, 1fr) auto; }
+.s3-lab-layout > .s3-lab-grid,
+.s3-fg-intro { grid-area: 2 / 1; }
+.s3-fg-intro { align-self: center; text-align: center; pointer-events: none; }
+.s3-fg-intro h2 { align-items: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin: 0; font-size: 48px; line-height: 1.2; }
+.s3-fg-intro h2 strong { color: var(--s3-teal); font-family: var(--font-display); font-size: 96px; }
+.s3-fg-intro h2 span + span { border-left: 1px solid var(--ui-00); padding-left: 24px; }
+.s3-fg-intro p { font-size: 36px; margin: 24px 0 0; }
+.s3-lab-slide:not([data-reveal-state="1"]) .s3-fg-intro { opacity: 0; visibility: hidden; }
 
 .s3-lab-grid {
   display: grid;
@@ -402,13 +410,15 @@
   border-top: 1px solid var(--ui-00);
   display: flex;
   justify-content: space-between;
+  gap: 12px;
   padding-top: 7px;
 }
 
 .s3-abv-result strong {
   font-family: var(--font-display);
-  font-size: clamp(29px, 2.7vw, 46px);
+  font-size: 28px;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .s3-fg-reference { margin: 4px 0 0; }
@@ -433,6 +443,7 @@
 }
 
 .s3-formula strong { font-size: clamp(24px, 2vw, 34px); }
+.s3-formula > span { font-family: var(--font-display); font-size: 40px; }
 .s3-formula em { text-align: right; }
 
 /* S05 */
@@ -456,7 +467,7 @@
 .s3-fg-copy > p:last-child { font-size: clamp(23px, 1.8vw, 31px); font-weight: 620; line-height: 1.45; margin: 0; }
 .s3-fg-images { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; min-height: 0; }
 .s3-fg-images figure { border: 1px solid var(--ui-00); display: grid; grid-template-rows: minmax(0, 1fr) auto; margin: 0; min-height: 0; overflow: hidden; }
-.s3-fg-images img { height: 100%; min-height: 0; object-fit: cover; width: 100%; }
+.s3-fg-images img { height: 100%; min-height: 0; object-fit: contain; object-position: center; width: 100%; }
 .s3-fg-images figcaption { background: var(--s3-pale-teal); border-top: 1px solid var(--ui-00); font-family: var(--font-mono); font-size: 18px; font-weight: 700; padding: 8px 10px; }
 .s3-fg-sequence { align-items: center; background: var(--culture-pale-lab-blue); border: 1px solid var(--ui-00); display: flex; grid-column: 1 / -1; justify-content: center; min-height: 66px; }
 .s3-fg-sequence span { font-family: var(--font-display); font-size: clamp(24px, 2.1vw, 36px); font-weight: 620; padding: 0 20px; }
@@ -473,6 +484,7 @@
 .s3-gate-grid .is-stop { background: var(--culture-pale-rose); }
 .s3-gate-grid span { border: 1px solid var(--ui-00); font-family: var(--font-mono); font-size: 18px; font-weight: 800; justify-self: start; padding: 4px 9px; }
 .s3-gate-grid strong { font-family: var(--font-display); font-size: clamp(40px, 4vw, 68px); line-height: .9; margin: 17px 0; }
+.s3-gate-grid strong small { display: block; font-family: inherit; font-size: 28px; font-weight: 600; line-height: 1.25; margin-top: 12px; word-break: keep-all; }
 .s3-gate-grid p { align-self: end; border-top: 1px solid var(--ui-00); font-size: clamp(19px, 1.45vw, 25px); font-weight: 700; line-height: 1.35; margin: 0; padding-top: 13px; }
 .s3-gate-rule { background: var(--ui-00); color: var(--ui-100); font-size: clamp(23px, 1.85vw, 32px); font-weight: 650; margin: 0; padding: 12px 16px; text-align: center; }
 
@@ -484,10 +496,11 @@
 .s3-package-path span:nth-of-type(1),
 .s3-package-path span:nth-of-type(2) { background: var(--s3-pale-teal); }
 .s3-package-path span:nth-of-type(3),
-.s3-package-path span:nth-of-type(4) { background: var(--culture-pale-lab-blue); }
+.s3-package-path span:nth-of-type(4) { background: var(--culture-pale-green); }
 .s3-package-path span:nth-of-type(5),
-.s3-package-path span:nth-of-type(6),
-.s3-package-path span:nth-of-type(7) { background: var(--s3-pale-amber); }
+.s3-package-path span:nth-of-type(6) { background: var(--culture-pale-lab-blue); }
+.s3-package-path span:nth-of-type(7),
+.s3-package-path span:nth-of-type(8) { background: var(--s3-pale-amber); }
 .s3-package-path strong { font-family: var(--font-display); font-size: clamp(20px, 1.7vw, 29px); line-height: 1; }
 .s3-package-path small { font-size: clamp(17px, 1.2vw, 21px); font-weight: 750; margin-top: 7px; }
 .s3-package-path b { align-items: center; display: flex; font-size: 25px; padding: 0 3px; }
@@ -502,9 +515,12 @@
 .s3-station-image { border: 1px solid var(--ui-00); margin: 0; min-height: 0; overflow: hidden; }
 .s3-station-image img { height: 100%; object-fit: cover; object-position: 58% center; width: 100%; }
 .s3-station-copy { align-content: center; display: grid; }
-.s3-station-copy h1 { font-size: clamp(61px, min(6.2vw, 9.6vh), 104px); line-height: .84; margin: 10px 0 22px; }
+.s3-station-copy h1 { font-size: clamp(61px, min(6.2vw, 9.6vh), 104px); line-height: .84; margin: 10px 0 12px; }
+.s3-station-korean { font-size: clamp(23px, 1.7vw, 29px); font-weight: 750; margin: 0 0 18px; }
 .s3-equipment-list { display: grid; grid-template-columns: 1fr 1fr; }
-.s3-equipment-list span { border: 1px solid var(--ui-00); font-family: var(--font-mono); font-size: clamp(15px, 1vw, 18px); font-weight: 700; padding: 10px; }
+.s3-equipment-list span { border: 1px solid var(--ui-00); display: flex; flex-direction: column; justify-content: center; min-height: 74px; padding: 9px 10px; }
+.s3-equipment-list strong { font-family: var(--font-mono); font-size: clamp(15px, 1vw, 18px); font-weight: 750; line-height: 1.15; }
+.s3-equipment-list small { font-size: clamp(18px, 1.2vw, 21px); font-weight: 700; line-height: 1.2; margin-top: 6px; }
 .s3-station-copy > p:last-child { background: var(--s3-pale-teal); border: 1px solid var(--ui-00); font-size: clamp(21px, 1.65vw, 28px); font-weight: 620; line-height: 1.35; margin: 0; padding: 13px; }
 
 /* S10 */
@@ -607,8 +623,8 @@
 .s3-ready-layout { align-content: center; grid-template-columns: .72fr 1.28fr; grid-template-rows: minmax(0, 1fr) auto; }
 .s3-ready-layout > div:first-child { align-self: center; }
 .s3-ready-layout h1 { font-size: clamp(68px, min(7vw, 10.8vh), 118px); line-height: .84; margin: 10px 0 0; }
-.s3-ready-grid { border-left: 1px solid var(--ui-00); border-top: 1px solid var(--ui-00); display: grid; grid-template-columns: 1fr 1fr; }
-.s3-ready-grid p { align-items: center; border-bottom: 1px solid var(--ui-00); border-right: 1px solid var(--ui-00); display: grid; gap: 12px; grid-template-columns: auto 1fr; margin: 0; padding: 9px 12px; }
+.s3-ready-grid { display: grid; gap: 8px; grid-template-columns: 1fr 1fr; }
+.s3-ready-grid p { align-items: center; border: 1px solid var(--ui-00); display: grid; gap: 12px; grid-template-columns: auto 1fr; margin: 0; padding: 9px 12px; }
 .s3-ready-grid span { font-family: var(--font-mono); font-size: 17px; }
 .s3-ready-grid strong { font-family: var(--font-display); font-size: clamp(20px, 1.65vw, 28px); line-height: 1; }
 .s3-ready-grid small { display: block; font-family: var(--font-body); font-size: clamp(15px, 1vw, 18px); margin-top: 4px; }
@@ -638,8 +654,7 @@
 .s3-live-team strong { font-family: var(--font-display); font-size: clamp(19px, 1.45vw, 26px); line-height: 1; }
 .s3-live-team small { font-family: var(--font-mono); font-size: 14px; font-weight: 700; margin-top: 4px; }
 .s3-live-team > span { background: rgba(255, 255, 255, .55); border: 1px solid var(--ui-00); font-family: var(--font-mono); font-size: 17px; font-weight: 800; padding: 5px 8px; }
-.s3-live-slide[data-reveal-state="3"] { background: var(--s3-pale-amber); }
-.s3-live-slide[data-reveal-state="4"] .s3-live-next,
+.s3-live-slide[data-reveal-state="4"] { background: var(--s3-pale-amber); }
 .s3-live-slide[data-reveal-state="5"] .s3-live-next { background: var(--culture-pale-green); }
 .s3-live-slide[data-reveal-state="6"] .s3-live-next,
 .s3-live-slide[data-reveal-state="7"] .s3-live-next,
@@ -647,7 +662,7 @@
 .s3-live-slide[data-reveal-state="10"] { background: var(--s3-teal); }
 
 /* S17 */
-.s3-tasting-slide { background: #f7f7f3 url("./assets/saison-dupont-cellar.webp") right center / 44% 100% no-repeat; }
+.s3-tasting-slide { background: #f7f7f3 url("./assets/saison-dupont-cellar.webp") right center / auto 100% no-repeat; }
 .s3-tasting-slide::after { background: rgba(255, 255, 255, .91); border-right: 1px solid var(--ui-00); bottom: 0; content: ""; left: 0; position: absolute; top: 0; width: 69%; z-index: 0; }
 .s3-tasting-slide > * { position: relative; z-index: 1; }
 .s3-tasting-layout { grid-template-columns: .7fr 1.3fr; grid-template-rows: auto minmax(0, 1fr) auto; }
@@ -656,15 +671,20 @@
 .s3-tasting-heading > strong { font-size: clamp(21px, 1.6vw, 28px); }
 .s3-tasting-questions { border-left: 8px solid var(--ui-00); padding-left: 16px; }
 .s3-tasting-questions p { font-size: clamp(21px, 1.55vw, 27px); font-weight: 650; margin: 0 0 7px; }
-.s3-tasting-reveal { display: grid; gap: 9px; grid-template-columns: 1fr 1fr; }
-.s3-tasting-beer { background: var(--ui-100); border: 1px solid var(--ui-00); display: grid; padding: 12px; }
+.s3-tasting-reveal { display: grid; gap: 9px; grid-template-columns: 1fr 1fr; min-height: 0; }
+.s3-tasting-beer { background: var(--ui-100); border: 1px solid var(--ui-00); display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto minmax(118px, 1fr) auto auto auto; min-height: 0; padding: 10px 11px; }
 .s3-tasting-beer:nth-child(1) { background: var(--s3-pale-amber); }
 .s3-tasting-beer:nth-child(2) { background: var(--s3-pale-teal); }
 .s3-tasting-beer span,
 .s3-tasting-beer em { font-family: var(--font-mono); font-size: clamp(13px, .95vw, 16px); font-style: normal; font-weight: 700; }
-.s3-tasting-beer h2 { font-family: var(--font-display); font-size: clamp(24px, 2vw, 35px); line-height: .92; margin: 8px 0; min-height: 1.84em; }
-.s3-tasting-beer > strong { font-family: var(--font-display); font-size: clamp(36px, 3.2vw, 54px); line-height: .9; }
-.s3-tasting-beer p { border-top: 1px solid var(--ui-00); font-size: clamp(15px, 1vw, 18px); font-weight: 700; margin: 10px 0 7px; padding-top: 7px; }
+.s3-tasting-beer > span { grid-column: 1 / -1; }
+.s3-tasting-beer figure { align-items: center; display: flex; grid-column: 1 / -1; justify-content: center; margin: 3px 0 6px; min-height: 0; overflow: hidden; }
+.s3-tasting-beer figure img { height: 100%; max-height: 160px; max-width: 100%; object-fit: contain; width: 100%; }
+.s3-tasting-beer h2 { font-family: var(--font-display); font-size: clamp(21px, 1.65vw, 29px); line-height: .92; margin: 4px 8px 4px 0; }
+.s3-tasting-beer > strong { align-self: end; font-family: var(--font-display); font-size: clamp(31px, 2.7vw, 46px); line-height: .9; }
+.s3-tasting-beer p { border-top: 1px solid var(--ui-00); font-size: clamp(14px, .95vw, 17px); font-weight: 700; grid-column: 1 / -1; margin: 5px 0 4px; padding-top: 5px; }
+.s3-tasting-process { display: grid; gap: 2px; grid-column: 1 / -1; }
+.s3-tasting-process small { font-size: clamp(15px, 1.05vw, 18px); font-weight: 720; }
 .s3-tasting-caution { background: var(--ui-00); color: var(--ui-100); font-size: clamp(18px, 1.35vw, 24px); font-weight: 650; grid-column: 1 / -1; margin: 0; padding: 10px 13px; text-align: center; }
 
 /* S18 */

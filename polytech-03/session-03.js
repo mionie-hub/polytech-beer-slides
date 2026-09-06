@@ -1,4 +1,4 @@
-import { session03Data } from "./session-03-data.js?v=20260904-02";
+import { session03Data } from "./session-03-data.js?v=20260907-29";
 
 const teamOrder = ["pink", "green", "yellow"];
 
@@ -33,6 +33,11 @@ function calculateAbv(og, fg) {
   return `${((og - fg) * 131.25).toFixed(1)}%`;
 }
 
+function expectedAbv(team) {
+  const [lowFg, highFg] = team.expectedFgRange;
+  return `${((team.og - highFg) * 131.25).toFixed(1)}–${((team.og - lowFg) * 131.25).toFixed(1)}%`;
+}
+
 function renderBatchLab() {
   const root = document.querySelector("[data-batch-lab]");
   if (!root) return;
@@ -41,14 +46,14 @@ function renderBatchLab() {
     const team = session03Data.teams[key];
     const saved = "";
     return `
-      <article class="s3-lab-card" data-team="${key}">
+      <article class="s3-lab-card story-reveal" data-team="${key}" data-reveal-step="${teamOrder.indexOf(key) + 2}">
         <header><span>TEAM ${escapeHtml(team.color)}</span><h2>${escapeHtml(team.style)}</h2><em>${escapeHtml(team.korean)}</em></header>
         <div class="s3-lab-known"><p><small>ACTUAL VOLUME</small><strong>${team.volume}L</strong></p><p><small>ACTUAL OG</small><strong>${team.og.toFixed(3)}</strong></p></div>
         <div class="s3-fg-entry">
           <label for="fg-${key}">TODAY'S FG</label>
           <input id="fg-${key}" data-fg-input="${key}" inputmode="decimal" maxlength="5" placeholder="1.0__" value="${escapeHtml(saved)}" aria-label="${escapeHtml(team.style)} 오늘의 FG">
         </div>
-        <div class="s3-abv-result"><span>EST. ABV</span><strong data-abv-output="${key}">${calculateAbv(team.og, Number.parseFloat(saved))}</strong></div>
+        <div class="s3-abv-result"><span>EST. ABV</span><strong data-abv-output="${key}">${expectedAbv(team)}</strong></div>
         <p class="s3-fg-reference">REFERENCE FG · ${escapeHtml(team.expectedFg)}</p>
       </article>`;
   }).join("");
@@ -59,7 +64,8 @@ function renderBatchLab() {
       const key = input.dataset.fgInput;
       const team = session03Data.teams[key];
       const output = root.querySelector(`[data-abv-output="${key}"]`);
-      output.textContent = calculateAbv(team.og, Number.parseFloat(input.value));
+      const isEmpty = input.value.trim() === "";
+      output.textContent = isEmpty ? expectedAbv(team) : calculateAbv(team.og, Number(input.value));
     });
   });
 }
@@ -73,7 +79,7 @@ function renderPrimeCards() {
       <article data-team="${key}">
         <span>TEAM ${escapeHtml(team.color)}</span>
         <h2>${escapeHtml(team.style)}</h2>
-        <strong>${team.prime.toFixed(1)}g</strong>
+        <strong>__ g</strong>
         <em>DEXTROSE / 500mL PET</em>
         <p>TARGET ${team.targetCo2.toFixed(2)} vol CO₂</p>
       </article>`;
@@ -99,10 +105,11 @@ function renderTastingReveal() {
   root.innerHTML = beers.map((beer, index) => `
     <article class="s3-tasting-beer story-reveal" data-reveal-step="${index + 2}">
       <span>BEER ${beer.code}</span>
+      <figure><img src="${escapeHtml(beer.image)}" alt="${escapeHtml(beer.imageAlt)}"></figure>
       <h2>${escapeHtml(beer.name)}</h2>
       <strong>${escapeHtml(beer.abv)}</strong>
       <p>${escapeHtml(beer.cues)}</p>
-      <em>${escapeHtml(beer.process)}</em>
+      <div class="s3-tasting-process"><em>${escapeHtml(beer.process)}</em><small>${escapeHtml(beer.processKo)}</small></div>
     </article>`).join("");
 }
 
