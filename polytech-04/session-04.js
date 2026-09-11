@@ -111,7 +111,7 @@ slides.push(pairingSlide("S35", "MATCH THE INTENSITY", "강도부터 맞춥니�
   reveal(2, '<article><span>RICH ↔ RICH</span><strong>진함과 진함</strong></article>') + '</div>' +
   reveal(3, '<p class="s4-pair-statement">한쪽이 다른 쪽을 삼키지 않게.</p>'), 3));
 slides.push(pairingSlide("S36", "PAIRING COMPASS", "조합을 찾는 네 가지 방향",
-  '<div class="s4-pair-compass">' + [["MATCH","강도와 무게를 맞춘다"],["ECHO","비슷한 풍미를 이어준다"],["CONTRAST","다른 풍미를 맞부딪힌다"],["CUT","입안의 무거움을 덜어준다"]].map(([en,ko],i)=>reveal(i+1,`<article><span>0${i+1}</span><div><strong>${en}</strong><p>${ko}</p></div></article>`)).join("") + '</div>', 4));
+  '<div class="s4-pair-compass">' + [["MATCH","서로 버틸 수 있는 강도"],["ECHO","닮은 풍미를 잇기"],["CONTRAST","다른 성질로 재미 만들기"],["CUT","탄산·쓴맛·산미로 입안 정리하기"]].map(([en,ko],i)=>reveal(i+1,`<article><span>0${i+1}</span><div><strong>${en}</strong><p>${ko}</p></div></article>`)).join("") + '</div>', 4));
 slides.push(pairingSlide("S37", "THREE QUESTIONS · 먹기 전", "음식 앞에서, 세 가지 질문",
   '<div class="s4-pair-questions">' + [["HOW STRONG?","강도는?"],["WHAT ECHOES?","이어지는 풍미는?"],["WHAT NEEDS RELIEF?","무엇을 덜고, 무엇을 대비할까?"]].map(([en,ko],i)=>reveal(i+1,`<p><span>0${i+1} · ${en}</span><strong>${ko}</strong></p>`)).join("") + '</div>' +
   reveal(4, '<p class="s4-pair-note">지방감 · 매운 자극 · 짠맛 · 단맛</p>'), 4));
@@ -120,7 +120,7 @@ slides.push(pairingSlide("S38", "WHAT CHANGED? · 먹은 뒤", "함께 먹으니
   reveal(5, '<p class="s4-pair-note">맥주에서도, 음식에서도.</p>'), 5));
 slides.push(pairingSlide("S39", "TASTE · COMPARE · RECORD", "따로 맛보고, 함께 맛보고,<br>다시 비교합니다.",
   '<div class="s4-pair-method">' + [["맥주 단독","BEER"],["음식 단독","FOOD"],["함께","TOGETHER"],["변화 기록","RECORD"]].map(([ko,en],i)=>reveal(i+1,`<article><span>0${i+1}</span><strong>${ko}</strong><small>${en}</small></article>`)).join("") + '</div>', 4));
-slides.push(pairingSlide("S40", "BUILD A FOOD HYPOTHESIS", "오후에 시험할 조합 하나를<br>골라봅시다.",
+slides.push(pairingSlide("S40", "BUILD A FOOD HYPOTHESIS", "이 맥주와 어떤 음식이<br>잘 어울릴지 상상해봅시다.",
   '<div class="s4-pair-choice">' +
   reveal(1, '<p class="s4-pair-combination">우리 맥주 <span>______</span><b>+</b>음식 <span>______</span></p>') +
   reveal(2, '<div class="s4-pair-reasons"><h2>선택한 이유는?</h2><ul><li>강도가 비슷해서</li><li>풍미가 이어져서</li><li>대비가 재미있어서</li><li>무거움을 덜어줄 것 같아서</li></ul></div>') + '</div>' +
