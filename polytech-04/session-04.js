@@ -111,7 +111,12 @@ slides.push(pairingSlide("S35", "MATCH THE INTENSITY", "강도부터 맞춥니�
   reveal(2, '<article><span>RICH ↔ RICH</span><strong>진함과 진함</strong></article>') + '</div>' +
   reveal(3, '<p class="s4-pair-statement">한쪽이 다른 쪽을 삼키지 않게.</p>'), 3));
 slides.push(pairingSlide("S36", "PAIRING COMPASS", "조합을 찾는 네 가지 방향",
-  '<div class="s4-pair-compass">' + [["MATCH","서로 버틸 수 있는 강도"],["ECHO","닮은 풍미를 잇기"],["CONTRAST","다른 성질로 재미 만들기"],["CUT","탄산·쓴맛·산미로 입안 정리하기"]].map(([en,ko],i)=>reveal(i+1,`<article><span>0${i+1}</span><div><strong>${en}</strong><p>${ko}</p></div></article>`)).join("") + '</div>', 4));
+  '<div class="s4-pair-compass">' + [
+    ["BALANCE","힘을 맞춘다","서로 버틸 수 있는가?"],
+    ["BRIDGE","공통 풍미로 잇는다","둘 사이의 연결고리는 무엇인가?"],
+    ["CONTRAST","다름으로 서로를 살린다","반대되는 감각이 더 흥미롭게 만드는가?"],
+    ["CUT","입안을 다시 깨끗하게 만든다","탄산·쓴맛·산미가 무게감을 정리하는가?"]
+  ].map(([en,ko,question],i)=>reveal(i+1,`<article><span>0${i+1}</span><div><strong>${en}</strong><p>${ko}</p><em>${question}</em></div></article>`)).join("") + '</div>', 4));
 slides.push(pairingSlide("S37", "THREE QUESTIONS · 먹기 전", "음식 앞에서, 세 가지 질문",
   '<div class="s4-pair-questions">' + [["HOW STRONG?","강도는?"],["WHAT ECHOES?","이어지는 풍미는?"],["WHAT NEEDS RELIEF?","무엇을 덜고, 무엇을 대비할까?"]].map(([en,ko],i)=>reveal(i+1,`<p><span>0${i+1} · ${en}</span><strong>${ko}</strong></p>`)).join("") + '</div>' +
   reveal(4, '<p class="s4-pair-note">지방감 · 매운 자극 · 짠맛 · 단맛</p>'), 4));
