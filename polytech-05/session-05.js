@@ -275,8 +275,6 @@ slide("S29", "Five Sessions · One Journey", `<div class="s5-finale-intro">
     ${reveal(4, `<strong>이제, 여러분의 다음 잔이 시작됩니다.</strong>`)}
   </div>`, {count:4, cls:"s5-final"});
 
-slide("S28", "Keep Going", `${title("WANT TO KEEP GOING?", "배움을 계속 이어가고 싶다면?")}
-<div class="s5-cta"><div><h2>WSET BEER</h2><div class="s5-course-dates"><p><strong>LEVEL 1</strong><span>10월 개강</span></p><p><strong>LEVEL 2</strong><span>11월 개강</span></p></div><p class="s5-benefit">폴리텍 수강생 혜택 <strong>총 10만원 할인</strong></p><p class="s5-deadline">9/16 <strong>수요일</strong> 23:59까지</p></div><div class="s5-qr-area"><img src="${asset("WSET_Beer_Level1_Photo.jpg")}" alt="WSET Level 1 Award in Beer 과정 사진"><img src="${asset("WSET_Beer_Level2_Photo.jpg")}" alt="WSET Level 2 Award in Beer 과정 사진"><a class="s5-qr-link" href="https://fermentedghost.com/" target="_blank" rel="noopener noreferrer" aria-label="Fermented Ghost 웹사이트 열기"><img src="${asset("QR_FermentedGhost_Website.png")}" alt="https://fermentedghost.com/으로 연결되는 QR 코드"></a><span class="s5-qr-address">fermentedghost.com</span></div></div>`, {cls:"s5-cta-slide"});
 
 document.querySelector("[data-session05-deck]").innerHTML = slides.join("");
 document.querySelector("[data-session05-deck]").addEventListener("click", (event) => {

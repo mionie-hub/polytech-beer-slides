@@ -131,13 +131,8 @@ slides.push(pairingSlide("S40", "BUILD A FOOD HYPOTHESIS", "이 맥주와 어떤
   reveal(2, '<div class="s4-pair-reasons"><h2>선택한 이유는?</h2><ul><li>강도가 비슷해서</li><li>풍미가 이어져서</li><li>대비가 재미있어서</li><li>무거움을 덜어줄 것 같아서</li></ul></div>') + '</div>' +
   reveal(3, '<p class="s4-pair-statement">함께 먹으면 무엇이 달라질까요?</p>'), 3));
 
-slides.push(slide("S41", "Session 05 · Beyond the Glass", `${title("AFTER LUNCH, TEST IT", "가설은 세웠습니다.<br>오후에는 직접 확인합니다.")}${reveal(1,`<p class="s4-method">BEER → FOOD</p>`)}${reveal(2,`<p class="s4-method">FOOD → BEER</p>`)}${reveal(3,`<p class="s4-method is-dark">WHAT CHANGED?</p>`)}${reveal(4,`<p class="s4-big-question">맥주는 음식과 만났을 때<br>어떻게 더 맛있어질까요?</p>`)}${reveal(5, `<aside class="s4-closing-registration"><div class="s4-priority-qr-pending">신청 링크<br>준비 중</div><p>배움을 계속 이어가고 싶다면?<br><strong>WSET BEER LEVEL 1 · 폴리텍 10% 할인</strong><br>9/17 목요일 23:59까지</p></aside>`)}`, { count: 5, cls: "s4-closing", footer: "Next · Session 05 · Beyond the Glass" }));
+slides.push(slide("S41", "Session 05 · Beyond the Glass", `${title("AFTER LUNCH, TEST IT", "가설은 세웠습니다.<br>오후에는 직접 확인합니다.")}${reveal(1,`<p class="s4-method">BEER → FOOD</p>`)}${reveal(2,`<p class="s4-method">FOOD → BEER</p>`)}${reveal(3,`<p class="s4-method is-dark">WHAT CHANGED?</p>`)}${reveal(4,`<p class="s4-big-question">맥주는 음식과 만났을 때<br>어떻게 더 맛있어질까요?</p>`)}`, { count: 4, cls: "s4-closing", footer: "Next · Session 05 · Beyond the Glass" }));
 
-const registrationQr = '<div class="s4-priority-qr-pending">신청 링크<br>준비 중</div>';
-slides.splice(31, 0,
-  slide("S31", "Is Level 1 for me?", `${title("LEVEL 1 IS FOR YOU IF…", "이런 마음이 들었다면,<br>Level 1에서 이어가세요.")}<div class="s4-fit-list">${["맥주를 좋아하지만 설명하기 어렵다","원료와 양조를 처음부터 정리하고 싶다","스타일을 체계적으로 배우고 싶다","시음할 때 “맛있다”보다 한 단계 더 말하고 싶다"].map((text,i)=>reveal(i+1,`<p><span>0${i+1}</span>${text}</p>`)).join("")}</div>${reveal(5,'<p class="s4-banner">Beer Culinary Lab에서 재미있었다면,<br>Level 1은 자연스러운 다음 단계입니다.</p>')}`, {count:5,cls:"s4-fit-slide"}),
-  slide("S32", "Your next step", `${title("CONTINUE THE JOURNEY.", "다음 배움을 이어가세요.")}<div class="s4-enroll-main"><div><h2>WSET BEER · LEVEL 1</h2><p class="s4-enroll-month">2026년 10월</p><p class="s4-enroll-benefit">폴리텍 수강생 혜택 <strong>10% 할인</strong></p><p class="s4-enroll-pay">오늘 결제할 필요 없습니다.</p></div><div class="s4-enroll-scan">${registrationQr}<p>지금 QR로 신청하세요</p></div></div><p class="s4-banner"><strong>9/17 목요일 23:59까지 신청하면</strong><br>10% 혜택을 확보합니다.</p>`, {cls:"s4-enroll-slide"})
-);
 
 document.querySelector("[data-session04-deck]").innerHTML = slides.join("");
 await import("../polytech-assets/slides.js?v=20260823-47");
